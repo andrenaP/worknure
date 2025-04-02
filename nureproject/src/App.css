@@ -1,0 +1,54 @@
+.app-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nurework-title {
+  margin: 0;
+  font-size: 24px;
+  margin-right: 20px;
+  color: red;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 3px 3px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 5px 10px;
+}
+
+.jobs-list {
+  list-style: none;
+  padding: 0;
+}
+
+.jobs-list li {
+  margin-bottom: 10px;
+}
+
+.jobs-list button {
+  margin-left: 10px;
+  padding: 2px 8px;
+}

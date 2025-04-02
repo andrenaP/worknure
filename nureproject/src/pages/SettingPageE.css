@@ -1,0 +1,48 @@
+.settings-employer-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.settings-employer-container input,
+.settings-employer-container select {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 200px;
+}
+
+.job-select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Уменьшаем расстояние между списком и кнопкой */
+  margin: 10px 0;
+}
+
+.job-select-container select {
+  width: 200px;
+  padding: 5px;
+}
+
+.job-select-container button {
+  padding: 5px 10px;
+  white-space: nowrap; /* Предотвращаем перенос текста кнопки */
+}
+
+.job-info-input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  resize: vertical;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}

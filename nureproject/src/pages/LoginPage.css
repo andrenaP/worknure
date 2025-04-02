@@ -1,0 +1,17 @@
+.login-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.login-container input,
+.login-container select {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  width: 200px; /* Единая ширина для всех полей */
+}
+
+.login-container button {
+  padding: 5px 10px;
+  margin: 5px;
+}

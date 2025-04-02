@@ -1,0 +1,17 @@
+.registration-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .registration-container input,
+  .registration-container select {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 200px; /* Фиксированная ширина для единообразия */
+  }
+  
+  .registration-container button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
