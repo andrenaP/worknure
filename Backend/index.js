@@ -8,6 +8,7 @@ const db = new sqlite3.Database("jobs.db");
 const SECRET = "supersecretkey";
 
 const cors = require("cors");
+const { cpSync } = require("fs");
 app.use(cors());
 
 app.use(express.json());
@@ -56,6 +57,47 @@ app.post("/login", (req, res) => {
         });
     });
 });
+
+
+// Вход
+app.get("/user",authenticateToken, (req, res) => {
+    const user=req.user
+    db.get("SELECT * FROM users WHERE id = ?", [req.user.id], (err, user) => {
+        if (!user) return res.status(400).json({ error: "User not found" });
+        delete user.password
+        res.json(user);
+    });
+});
+
+app.post("/user", authenticateToken, (req, res) => {
+    const {first_name, last_name, email, job_tag } = req.body;
+    // console.log(role);
+
+    // if (role !== "employer" && role !== "worker") {
+    //     return res.status(404).json({ error: `Wrong role ${role}` });
+    // }
+
+    const query = `
+        UPDATE users 
+        SET first_name = ?, last_name = ?, email = ?, job_tag = ? 
+        WHERE id = ?
+    `;
+
+    db.run(query, [first_name, last_name, email, job_tag, req.user.id], function (err) {
+        if (err) {
+            console.log(err);
+            return res.status(400).json({ error: "Error updating user" });
+        }
+        res.json({ message: "User updated", changes: this.changes });
+    });
+});
+
+
+
+// {
+//     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InVzZXIiLCJpYXQiOjE3NDQwMjA5NzN9.Zm41AIBrsDcu_K9Tvr8XsGzzi_QcmKR7tuyrd18mlds",
+//     "role": "user"
+// }
 
 // Получение списка работ
 app.get("/jobs", (req, res) => {

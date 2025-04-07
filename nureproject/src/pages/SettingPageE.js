@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './SettingPageE.css';
 
+const API_URL = "http://localhost:3000";
+
+
 function SettingPageE() {
   const [settings, setSettings] = useState({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
     jobInfo: ""
   });
@@ -25,11 +29,29 @@ function SettingPageE() {
     }
   };
 
-  const handleSave = () => {
+  useEffect(() => {
+    fetchuser();
+  }, []);
+
+  const fetchuser = async () => {
+    try {
+      const response = await axios.get(`${API_URL}/user`, { headers: { Authorization: localStorage.token } });
+      setSettings(response.data);
+      console.log(response.data)
+    } catch (error) {
+      console.error("Error fetching user", error);
+    }
+  };
+
+
+
+  const handleSave = async () =>  {
     // Здесь можно добавить запрос к API для сохранения настроек
     const dataToSave = { ...settings, jobs };
     alert("Настройки сохранены: " + JSON.stringify(dataToSave));
     // Например: await axios.put(`${API_URL}/employer/settings`, dataToSave, { headers: { Authorization: token } });
+    console.log(dataToSave)
+    const response = await axios.post(`${API_URL}/user`, dataToSave, { headers: { Authorization: localStorage.token } });
   };
 
   const handleCancel = () => {
@@ -42,16 +64,16 @@ function SettingPageE() {
       
       <input 
         type="text" 
-        name="firstName"
+        name="first_name"
         placeholder="Имя" 
-        value={settings.firstName}
+        value={settings.first_name}
         onChange={handleChange}
       />
       <input 
         type="text" 
-        name="lastName"
+        name="last_name"
         placeholder="Фамилия" 
-        value={settings.lastName}
+        value={settings.last_name}
         onChange={handleChange}
       />
       <input 
