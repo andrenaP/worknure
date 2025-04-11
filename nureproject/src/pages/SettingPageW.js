@@ -9,10 +9,10 @@ const API_URL = "http://localhost:3000";
 
 function SettingPageW() {
   const [settings, setSettings] = useState({
-    name: "",
-    skills: "",
-    experience: "",
-    job: "medic" // Значение по умолчанию для выпадающего списка
+    first_name: "",
+    last_name: "",
+    email: "",
+    job_tag: "medic" // Значение по умолчанию для выпадающего списка
   });
   const navigate = useNavigate();
 
@@ -49,26 +49,26 @@ function SettingPageW() {
       <h2>Настройки рабочего</h2>
       <input 
         type="text" 
-        name="name"
+        name="first_name"
         placeholder="Имя" 
-        value={settings.name}
+        value={settings.first_name}
         onChange={handleChange}
       />
       <input 
         type="text" 
         name="last_name"
         placeholder="last_name" 
-        value={settings.name}
+        value={settings.last_name}
         onChange={handleChange}
       />
       <input 
         type="text" 
-        name="Mail"
+        name="email"
         placeholder="Mail" 
-        value={settings.name}
+        value={settings.email}
         onChange={handleChange}
       />
-      <input 
+      {/* <input 
         type="text" 
         name="skills"
         placeholder="Навыки (через запятую)" 
@@ -81,8 +81,8 @@ function SettingPageW() {
         placeholder="Опыт работы (лет)" 
         value={settings.experience}
         onChange={handleChange}
-      />
-      <select name="job" value={settings.job} onChange={handleChange}>
+      /> */}
+      <select name="job_tag" value={settings.job_tag} onChange={handleChange}>
         <option value="medic">Медик</option>
         <option value="teacher">Учитель</option>
         <option value="builder">Строитель</option>

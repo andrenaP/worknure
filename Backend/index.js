@@ -3,6 +3,9 @@ const sqlite3 = require("sqlite3").verbose();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
+const fs = require("fs");
+const xml2js = require("xml2js");
+
 const app = express();
 const db = new sqlite3.Database("jobs.db");
 const SECRET = "supersecretkey";
@@ -172,4 +175,43 @@ app.get("/user/:user_id", authenticateToken, (req, res) => {
 // Запуск сервера
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
+});
+
+
+app.get("/export_workers_xml", authenticateToken, (req, res) => {
+    // Тільки адміністратор або роботодавець можуть експортувати
+    if (req.user.role !== "employer") {
+        return res.status(403).json({ error: "Access denied" });
+    }
+
+    db.all("SELECT id, username, first_name, last_name, email, job_tag FROM users WHERE role = 'worker'", [], (err, rows) => {
+        if (err) {
+            return res.status(500).json({ error: "Database error" });
+        }
+
+        // Створення структури XML
+        const builder = new xml2js.Builder();
+        const obj = {
+            workers: {
+                worker: rows.map(user => ({
+                    id: user.id,
+                    username: user.username,
+                    first_name: user.first_name,
+                    last_name: user.last_name,
+                    email: user.email,
+                    job_tag: user.job_tag
+                }))
+            }
+        };
+
+        const xml = builder.buildObject(obj);
+
+        // Запис у файл
+        fs.writeFile("workers.xml", xml, err => {
+            if (err) {
+                return res.status(500).json({ error: "Error writing XML file" });
+            }
+            res.json({ message: "Workers exported to XML", file: "workers.xml" });
+        });
+    });
 });
