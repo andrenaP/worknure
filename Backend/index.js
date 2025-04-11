@@ -2,19 +2,26 @@ const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-
 const fs = require("fs");
 const xml2js = require("xml2js");
+const morgan = require("morgan");
+const logger = require("./logger"); // Імпортуємо наш логгер
 
 const app = express();
 const db = new sqlite3.Database("jobs.db");
 const SECRET = "supersecretkey";
 
 const cors = require("cors");
-const { cpSync } = require("fs");
 app.use(cors());
 
 app.use(express.json());
+
+// Використовуємо morgan для логування HTTP запитів
+app.use(morgan("combined", {
+  stream: {
+    write: (message) => logger.info(message.trim())  // Логуємо в winston
+  }
+}));
 
 // Инициализация БД
 db.serialize(() => {
@@ -28,12 +35,12 @@ db.serialize(() => {
 function authenticateToken(req, res, next) {
     const token = req.header("Authorization");
     if (!token) {
-        console.log(`Access denied Token:${token}`)
-        return res.status(401).json({ error: "Access denied Token" });}
+        logger.warn(`Access denied, no token provided`);
+        return res.status(401).json({ error: "Access denied" });}
 
     jwt.verify(token, SECRET, (err, user) => {
         if (err){
-            console.log(`Invalid Token:${token}`)
+            logger.error(`Invalid Token: ${token}`);
             return res.status(403).json({ error: "Invalid token" });}
         req.user = user;
         next();
@@ -217,7 +224,7 @@ app.get("/export_workers_xml", authenticateToken, (req, res) => {
             if (err) {
                 return res.status(500).json({ error: "Error writing XML file" });
             }
-            res.json({ message: "Workers exported to XML", file: "workers.xml" });
+            res.json({ message: "Workers exported to XML", file: xml });
         });
     });
 });
@@ -248,12 +255,17 @@ app.get("/user/subscriptions", authenticateToken, (req, res) => {
   
   app.use((req, res, next) => {
     const send = res.send;
-  
+    
     res.send = function (body) {
       logger.info(`Response to ${req.method} ${req.url}: ${res.statusCode}`);
       send.call(res, body);
     };
   
     next();
+  });
+  // Глобальне оброблення помилок
+app.use((err, req, res, next) => {
+    logger.error(`Error occurred on ${req.method} ${req.url}: ${err.message}`);
+    res.status(500).json({ error: "Internal server error" });
   });
   
