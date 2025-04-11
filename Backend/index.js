@@ -27,10 +27,14 @@ db.serialize(() => {
 // Middleware для проверки токена
 function authenticateToken(req, res, next) {
     const token = req.header("Authorization");
-    if (!token) return res.status(401).json({ error: "Access denied" });
+    if (!token) {
+        console.log(`Access denied Token:${token}`)
+        return res.status(401).json({ error: "Access denied Token" });}
 
     jwt.verify(token, SECRET, (err, user) => {
-        if (err) return res.status(403).json({ error: "Invalid token" });
+        if (err){
+            console.log(`Invalid Token:${token}`)
+            return res.status(403).json({ error: "Invalid token" });}
         req.user = user;
         next();
     });
@@ -143,6 +147,7 @@ app.post("/subscribe", authenticateToken, (req, res) => {
     db.run("INSERT INTO subscriptions (worker_id, job_id) VALUES (?, ?)", [req.user.id, job_id], err => {
         if (err) return res.status(400).json({ error: "Already subscribed" });
         res.json({ message: "Subscribed successfully" });
+        console.log("Subscribed successfully")
     });
 });
 
@@ -153,6 +158,7 @@ app.post("/unsubscribe", authenticateToken, (req, res) => {
     db.run("DELETE FROM subscriptions WHERE worker_id = ? AND job_id = ?", [req.user.id, job_id], err => {
         if (err) return res.status(400).json({ error: "Error unsubscribing" });
         res.json({ message: "Unsubscribed successfully" });
+        console.log("Unsubscribed successfully")
     });
 });
 
@@ -165,12 +171,12 @@ app.get("/job_subscribers/:job_id", authenticateToken, (req, res) => {
 });
 
 // Получение информации о пользователе по ID
-app.get("/user/:user_id", authenticateToken, (req, res) => {
-    db.get("SELECT id, username, role, first_name, last_name, email, job_tag FROM users WHERE id = ?", [req.params.user_id], (err, user) => {
-        if (!user) return res.status(404).json({ error: "User not found" });
-        res.json(user);
-    });
-});
+// app.get("/user/:user_id", authenticateToken, (req, res) => {
+//     db.get("SELECT id, username, role, first_name, last_name, email, job_tag FROM users WHERE id = ?", [req.params.user_id], (err, user) => {
+//         if (!user) return res.status(404).json({ error: "User not found" });
+//         res.json(user);
+//     });
+// });
 
 // Запуск сервера
 app.listen(3000, () => {
@@ -215,3 +221,39 @@ app.get("/export_workers_xml", authenticateToken, (req, res) => {
         });
     });
 });
+
+app.get("/user/subscriptions", authenticateToken, (req, res) => {
+    console.log(req.user.role)
+    if (req.user.role !== "worker") {
+      return res.status(403).json({ error: "Access denied" });
+    }
+  
+    const sql = `
+      SELECT jobs.id, jobs.name, jobs.description, jobs.salary
+      FROM jobs
+      JOIN subscriptions ON jobs.id = subscriptions.job_id
+      WHERE subscriptions.worker_id = ?
+    `;
+  
+    db.all(sql, [req.user.id], (err, rows) => {
+      if (err) {
+        console.error("DB error:", err);
+        return res.status(500).json({ error: "Internal server error" });
+      }
+  
+      res.json(rows); // возвращаем массив работ, на которые подписан пользователь
+      
+    });
+  });
+  
+  app.use((req, res, next) => {
+    const send = res.send;
+  
+    res.send = function (body) {
+      logger.info(`Response to ${req.method} ${req.url}: ${res.statusCode}`);
+      send.call(res, body);
+    };
+  
+    next();
+  });
+  
