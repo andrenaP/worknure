@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import {
   BrowserRouter,
   Routes,
@@ -9,10 +8,14 @@ import {
 } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
-import SettingPage from "./pages/SettingPage"; // Объединённая страница настроек
+import SettingPage from "./pages/SettingPage";
+import {
+  getJobs,
+  getSubscribedJobIds,
+  subscribeJob,
+  unsubscribeJob,
+} from "./controllers/jobController";
 import "./App.css";
-
-const API_URL = "http://localhost:3000";
 
 const App = () => {
   const [jobs, setJobs] = useState([]);
@@ -23,30 +26,11 @@ const App = () => {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetchJobs();
+    getJobs(setJobs);
     if (userRole === "worker" && token) {
-      fetchSubscribedJobs();
+      getSubscribedJobIds(setSubscribedJobIds, token);
     }
   }, []);
-
-  const fetchJobs = async () => {
-    try {
-      const response = await axios.get(`${API_URL}/jobs`);
-      setJobs(response.data);
-    } catch (error) {
-      console.error("Ошибка при получении работ", error);
-    }
-  };
-
-  const fetchSubscribedJobs = async () => {
-     if(localStorage.token){
-      const response = await axios.get(`${API_URL}/user/subscriptions`, {
-        headers: { Authorization: localStorage.token },
-      });
-      setSubscribedJobIds(response.data.map((job) => job.id));
-    }
-
-  };
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -54,8 +38,6 @@ const App = () => {
 
   const HomePage = () => {
     const navigate = useNavigate();
-    const location = useLocation();
-
     const handleLoginClick = () => navigate("/login");
     const handleRegisterClick = () => navigate("/register");
     const handleSettingsClick = () => {
@@ -64,34 +46,6 @@ const App = () => {
         return;
       }
       navigate("/settings");
-    };
-
-    const handleSubscribeJob = async (jobId) => {
-      try {
-        await axios.post(
-          `${API_URL}/subscribe`,
-          { job_id: jobId },
-          { headers: { Authorization: token } }
-        );
-        setSubscribedJobIds([...subscribedJobIds, jobId]);
-      } catch (error) {
-        console.error("Ошибка при подписке", error);
-        alert("Не удалось подписаться");
-      }
-    };
-
-    const handleUnsubscribeJob = async (jobId) => {
-      try {
-        await axios.post(
-          `${API_URL}/unsubscribe`,
-          { job_id: jobId },
-          { headers: { Authorization: token } }
-        );
-        setSubscribedJobIds(subscribedJobIds.filter((id) => id !== jobId));
-      } catch (error) {
-        console.error("Ошибка при отписке", error);
-        alert("Не удалось отписаться");
-      }
     };
 
     const filteredJobs = jobs.filter((job) =>
@@ -129,11 +83,15 @@ const App = () => {
                 {userRole === "worker" && (
                   <div>
                     {subscribedJobIds.includes(job.id) ? (
-                      <button onClick={() => handleUnsubscribeJob(job.id)}>
+                      <button
+                        onClick={() => unsubscribeJob(job.id, token, subscribedJobIds, setSubscribedJobIds)}
+                      >
                         Отписаться
                       </button>
                     ) : (
-                      <button onClick={() => handleSubscribeJob(job.id)}>
+                      <button
+                        onClick={() => subscribeJob(job.id, token, subscribedJobIds, setSubscribedJobIds)}
+                      >
                         Подписаться
                       </button>
                     )}
