@@ -19,12 +19,13 @@ const db = new sqlite3.Database("jobs.db", (err) => {
 
 // Handle incoming messages
 parentPort.on("message", async (msg) => {
-  const { id, query, params, workerId } = msg;
-  console.log(`Worker ${workerId} received query with message ID ${id}`);
+  const { id, query, params, workerIndex } = msg;
+  console.log(`Worker worker-${workerIndex} received task with ID ${id}`);
 
-  // Introduce a 10-second delay to simulate workload
+  // Introduce a 1-second delay to simulate workload
+
   console.log(
-    `Worker ${workerId} processing query with message ID ${id} after delay`,
+    `Worker worker-${workerIndex} processing task with ID ${id} after delay`,
   );
 
   // Determine the type of query
@@ -33,27 +34,33 @@ parentPort.on("message", async (msg) => {
     db.all(query, params, (err, rows) => {
       if (err) {
         console.log(
-          `Worker ${workerId} failed to process query ${id}: ${err.message}`,
+          `Worker worker-${workerIndex} failed to process task ${id}: ${err.message}`,
         );
         parentPort.postMessage({ id, error: err.message });
       } else {
-        console.log(`Worker ${workerId} completed query ${id} successfully`);
+        console.log(
+          `Worker worker-${workerIndex} completed task ${id} successfully`,
+        );
         parentPort.postMessage({ id, result: rows });
+        parentPort.postMessage({ type: "completed", workerIndex, taskId: id });
       }
     });
   } else {
     db.run(query, params, function (err) {
       if (err) {
         console.log(
-          `Worker ${workerId} failed to process query ${id}: ${err.message}`,
+          `Worker worker-${workerIndex} failed to process task ${id}: ${err.message}`,
         );
         parentPort.postMessage({ id, error: err.message });
       } else {
-        console.log(`Worker ${workerId} completed query ${id} successfully`);
+        console.log(
+          `Worker worker-${workerIndex} completed task ${id} successfully`,
+        );
         parentPort.postMessage({
           id,
           result: { lastID: this.lastID, changes: this.changes },
         });
+        parentPort.postMessage({ type: "completed", workerIndex, taskId: id });
       }
     });
   }

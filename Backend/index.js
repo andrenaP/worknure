@@ -11,10 +11,11 @@ const cors = require("cors");
 const app = express();
 const SECRET = "supersecretkey";
 
-// Initialize worker threads
-const WORKER_COUNT = 2;
+// Initialize worker threads and message queue
+const WORKER_COUNT = 3;
 const workers = [];
-let currentWorkerIndex = 0;
+const workerStatus = new Array(WORKER_COUNT).fill(true); // true = idle, false = busy
+const taskQueue = []; // Queue for pending tasks
 
 // Create worker threads with unique IDs
 for (let i = 0; i < WORKER_COUNT; i++) {
@@ -23,35 +24,65 @@ for (let i = 0; i < WORKER_COUNT; i++) {
   });
   workers.push(worker);
   logger.info(`Initialized worker thread ${i} with ID worker-${i}`);
+
+  // Handle worker completion
+  worker.on("message", (msg) => {
+    if (msg.type === "completed") {
+      workerStatus[msg.workerIndex] = true; // Mark worker as idle
+      logger.info(
+        `Worker worker-${msg.workerIndex} completed task ${msg.taskId}`,
+      );
+      processQueue(); // Process next task in queue
+    }
+  });
 }
 
-// Round-robin task distribution
+// Message queue processing
 function sendToWorker(query, params) {
   return new Promise((resolve, reject) => {
-    const worker = workers[currentWorkerIndex];
-    const workerId = `worker-${currentWorkerIndex}`;
-    currentWorkerIndex = (currentWorkerIndex + 1) % WORKER_COUNT;
+    const taskId = Date.now() + Math.random();
+    taskQueue.push({ query, params, resolve, reject, taskId });
+    logger.info(`Task ${taskId} added to queue`);
+    processQueue();
+  });
+}
 
-    const messageId = Date.now() + Math.random();
-    logger.info(`Sending query to ${workerId} with message ID ${messageId}`);
-    worker.postMessage({ id: messageId, query, params, workerId });
+// Process tasks from the queue
+function processQueue() {
+  if (taskQueue.length === 0) return;
 
-    const messageHandler = (msg) => {
-      if (msg.id === messageId) {
-        worker.off("message", messageHandler);
-        if (msg.error) {
-          reject(new Error(msg.error));
-        } else {
-          resolve(msg.result);
-        }
-      }
-    };
+  // Find an idle worker
+  const idleWorkerIndex = workerStatus.findIndex((status) => status);
+  if (idleWorkerIndex === -1) return; // No idle workers, wait
 
-    worker.on("message", messageHandler);
-    worker.on("error", (err) => {
+  const worker = workers[idleWorkerIndex];
+  const task = taskQueue.shift(); // Dequeue the next task
+  workerStatus[idleWorkerIndex] = false; // Mark worker as busy
+
+  logger.info(`Assigning task ${task.taskId} to worker-${idleWorkerIndex}`);
+  worker.postMessage({
+    id: task.taskId,
+    query: task.query,
+    params: task.params,
+    workerIndex: idleWorkerIndex,
+  });
+
+  // Handle worker response
+  const messageHandler = (msg) => {
+    if (msg.id === task.taskId) {
       worker.off("message", messageHandler);
-      reject(err);
-    });
+      if (msg.error) {
+        task.reject(new Error(msg.error));
+      } else {
+        task.resolve(msg.result);
+      }
+    }
+  };
+
+  worker.on("message", messageHandler);
+  worker.on("error", (err) => {
+    worker.off("message", messageHandler);
+    task.reject(err);
   });
 }
 
@@ -105,7 +136,7 @@ app.post("/login", async (req, res) => {
     const users = await sendToWorker("SELECT * FROM users WHERE username = ?", [
       username,
     ]);
-    const user = alum[0];
+    const user = users[0];
     if (!user) {
       return res.status(400).json({ error: "User not found" });
     }
@@ -143,7 +174,7 @@ app.get("/user", authenticateToken, async (req, res) => {
 app.post("/user", authenticateToken, async (req, res) => {
   const { first_name, last_name, email, job_tag } = req.body;
   const query = `
-       <uint8Array users
+        UPDATE users
         SET first_name = ?, last_name = ?, email = ?, job_tag = ?
         WHERE id = ?
     `;
