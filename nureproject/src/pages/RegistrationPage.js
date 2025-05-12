@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import './RegistrationPage.css';
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./RegistrationPage.css";
 
 const API_URL = "http://localhost:3000";
 
 function RegistrationPage() {
-  const [regData, setRegData] = useState({ username: "", password: "", role: "worker" });
+  const [regData, setRegData] = useState({
+    username: "",
+    password: "",
+    role: "worker",
+  });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -17,11 +21,14 @@ function RegistrationPage() {
     try {
       const { username, password, role } = regData;
       await axios.post(`${API_URL}/register`, { username, password, role });
-      alert("Регистрация выполнена успешно");
+      alert("Реєстрація виконана успішно");
       navigate("/"); // Возвращаемся на главную страницу
-      console.log(username, password, role)
+      console.log(username, password, role);
     } catch (error) {
-      alert("Ошибка регистрации: " + (error.response?.data?.message || error.message));
+      alert(
+        "Помилка реєстрації: " +
+          (error.response?.data?.message || error.message),
+      );
     }
   };
 
@@ -31,26 +38,26 @@ function RegistrationPage() {
 
   return (
     <div className="registration-container">
-      <h2>Регистрация</h2>
-      <input 
-        type="text" 
+      <h2>Реєстрація</h2>
+      <input
+        type="text"
         name="username"
-        placeholder="Пользователь" 
+        placeholder="Користувач"
         value={regData.username}
         onChange={handleChange}
       />
-      <input 
-        type="password" 
+      <input
+        type="password"
         name="password"
-        placeholder="Пароль" 
+        placeholder="Пароль"
         value={regData.password}
         onChange={handleChange}
       />
       <select name="role" value={regData.role} onChange={handleChange}>
-        <option value="worker">Рабочий</option>
-        <option value="employer">Работодатель</option>
+        <option value="worker">Робочий</option>
+        <option value="employer">Роботодавець</option>
       </select>
-      <button onClick={handleRegister}>Зарегестрироваться</button>
+      <button onClick={handleRegister}>Зареєструватись</button>
       <button onClick={handleExit}>Назад</button>
     </div>
   );

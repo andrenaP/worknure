@@ -29,7 +29,7 @@ const App = () => {
           setSubscribedJobIds(subscribedIds);
         }
       } catch (error) {
-        console.error("Ошибка при инициализации данных", error);
+        console.error("Помилка під час ініціалізації даних", error);
       }
     };
     init();
@@ -40,7 +40,7 @@ const App = () => {
       await handleSubscribeJob(jobId, token);
       setSubscribedJobIds([...subscribedJobIds, jobId]);
     } catch (error) {
-      alert("Не удалось подписаться");
+      alert("Не вдалось підписатися");
     }
   };
 
@@ -49,7 +49,7 @@ const App = () => {
       await handleUnsubscribeJob(jobId, token);
       setSubscribedJobIds(subscribedJobIds.filter((id) => id !== jobId));
     } catch (error) {
-      alert("Не удалось отписаться");
+      alert("Не вдалося відписатись");
     }
   };
 
@@ -63,7 +63,7 @@ const App = () => {
     const handleRegisterClick = () => navigate("/register");
     const handleSettingsClick = () => {
       if (!userRole) {
-        alert("Сначала войдите в систему");
+        alert("Спочатку увійдіть у систему");
         return;
       }
       navigate("/settings");
@@ -85,12 +85,12 @@ const App = () => {
               onChange={handleSearchChange}
               className="search-input"
             />
-            <button className="search-button">Найти</button>
+            <button className="search-button">Знайти</button>
           </div>
           <div className="nav-buttons">
-            <button onClick={handleLoginClick}>Вход</button>
-            <button onClick={handleRegisterClick}>Регистрация</button>
-            <button onClick={handleSettingsClick}>Настройки</button>
+            <button onClick={handleLoginClick}>Вхід</button>
+            <button onClick={handleRegisterClick}>Реєстрація</button>
+            <button onClick={handleSettingsClick}>Налаштування</button>
           </div>
         </header>
 
@@ -105,11 +105,11 @@ const App = () => {
                   <div>
                     {subscribedJobIds.includes(job.id) ? (
                       <button onClick={() => unsubscribeJob(job.id)}>
-                        Отписаться
+                        Відписатися
                       </button>
                     ) : (
                       <button onClick={() => subscribeJob(job.id)}>
-                        Подписаться
+                        Підписатися
                       </button>
                     )}
                   </div>

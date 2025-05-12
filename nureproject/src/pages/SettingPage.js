@@ -97,9 +97,9 @@ function SettingPage() {
       await axios.post(`${API_URL}/user`, settings, {
         headers: { Authorization: localStorage.token },
       });
-      alert("Данные сохранены");
+      alert("Дані збережені");
     } catch (err) {
-      alert("Ошибка при сохранении");
+      alert("Помилка при збереженні");
     }
   };
 
@@ -116,11 +116,11 @@ function SettingPage() {
       await axios.post(`${API_URL}/jobs`, newJob, {
         headers: { Authorization: localStorage.token },
       });
-      alert("Вакансия добавлена");
+      alert("Вакансія додана");
       setNewJob({ name: "", salary: "", description: "", tag: "medic" });
       fetchEmployerJobs();
     } catch (err) {
-      alert("Ошибка при добавлении вакансии");
+      alert("Помилка при додаванні вакансії");
     }
   };
 
@@ -131,7 +131,7 @@ function SettingPage() {
       });
       fetchEmployerJobs();
     } catch (err) {
-      alert("Ошибка при удалении");
+      alert("Помилка при видаленні");
     }
   };
 
@@ -139,20 +139,20 @@ function SettingPage() {
 
   return (
     <div className="settings-container">
-      <h2>Настройки пользователя</h2>
+      <h2>Налаштування користувача</h2>
 
       {/* Общее */}
       <input
         type="text"
         name="first_name"
-        placeholder="Имя"
+        placeholder="Ім'я"
         value={settings.first_name}
         onChange={handleChange}
       />
       <input
         type="text"
         name="last_name"
-        placeholder="Фамилия"
+        placeholder="Прізвище"
         value={settings.last_name}
         onChange={handleChange}
       />
@@ -165,31 +165,31 @@ function SettingPage() {
       />
       {user.role === "worker" && (
         <>
-          <label>Специализация</label>
+          <label>Спеціалізація</label>
           <select
             name="job_tag"
             value={settings.job_tag}
             onChange={handleChange}
           >
             <option value="medic">Медик</option>
-            <option value="teacher">Учитель</option>
-            <option value="builder">Строитель</option>
-            <option value="engineer">Инженер</option>
+            <option value="teacher">Вчитель</option>
+            <option value="builder">Будівельник</option>
+            <option value="engineer">Інженер</option>
             <option value="astronaut">Космонавт</option>
           </select>
         </>
       )}
-      <button onClick={handleSave}>Сохранить</button>
-      <button onClick={handleExit}>Выйти</button>
+      <button onClick={handleSave}>Зберегти</button>
+      <button onClick={handleExit}>Вийти</button>
 
       {/* Раздел для работодателя */}
       {user.role === "employer" && (
         <div className="employer-section">
-          <h3>Добавить вакансию</h3>
+          <h3>Додати вакансію</h3>
           <input
             type="text"
             name="name"
-            placeholder="Название"
+            placeholder="Назва"
             value={newJob.name}
             onChange={handleJobChange}
           />
@@ -202,20 +202,20 @@ function SettingPage() {
           />
           <textarea
             name="description"
-            placeholder="Описание"
+            placeholder="Опис"
             value={newJob.description}
             onChange={handleJobChange}
           />
           <select name="tag" value={newJob.tag} onChange={handleJobChange}>
             <option value="medic">Медик</option>
-            <option value="teacher">Учитель</option>
-            <option value="builder">Строитель</option>
-            <option value="engineer">Инженер</option>
+            <option value="teacher">Вчитель</option>
+            <option value="builder">Будівельник</option>
+            <option value="engineer">Інженер</option>
             <option value="astronaut">Космонавт</option>
           </select>
-          <button onClick={handleAddJob}>Добавить вакансию</button>
+          <button onClick={handleAddJob}>Додати вакансію</button>
 
-          <h3>Ваши вакансии</h3>
+          <h3>Ваші вакансії</h3>
           <ul>
             {jobs.map((job) => (
               <li key={job.id}>

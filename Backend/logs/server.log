@@ -1982,3 +1982,1001 @@
 [2025-05-12T11:39:56.704Z] info: Assigning task 1747049996704.3142 to worker-0
 [2025-05-12T11:39:56.806Z] info: ::ffff:127.0.0.1 - - [12/May/2025:11:39:56 +0000] "POST /login HTTP/1.1" 400 26 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
 [2025-05-12T11:39:56.807Z] info: Worker worker-0 completed task 1747049996704.3142
+[2025-05-12T11:59:36.857Z] info: Task 1747051176857.1082 added to queue
+[2025-05-12T11:59:36.857Z] info: Assigning task 1747051176857.1082 to worker-0
+[2025-05-12T11:59:36.862Z] info: Task 1747051176862.8198 added to queue
+[2025-05-12T11:59:36.862Z] info: Assigning task 1747051176862.8198 to worker-1
+[2025-05-12T11:59:36.960Z] info: ::ffff:127.0.0.1 - - [12/May/2025:11:59:36 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T11:59:36.960Z] info: Worker worker-0 completed task 1747051176857.1082
+[2025-05-12T11:59:36.964Z] info: ::ffff:127.0.0.1 - - [12/May/2025:11:59:36 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T11:59:36.964Z] info: Worker worker-1 completed task 1747051176862.8198
+[2025-05-12T11:59:36.974Z] info: Task 1747051176974.6797 added to queue
+[2025-05-12T11:59:36.975Z] info: Assigning task 1747051176974.6797 to worker-0
+[2025-05-12T11:59:37.076Z] info: ::ffff:127.0.0.1 - - [12/May/2025:11:59:37 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T11:59:37.076Z] info: Worker worker-0 completed task 1747051176974.6797
+[2025-05-12T12:02:46.841Z] info: Task 1747051366841.6284 added to queue
+[2025-05-12T12:02:46.841Z] info: Assigning task 1747051366841.6284 to worker-0
+[2025-05-12T12:02:46.842Z] info: Task 1747051366842.8667 added to queue
+[2025-05-12T12:02:46.842Z] info: Assigning task 1747051366842.8667 to worker-1
+[2025-05-12T12:02:46.943Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:02:46 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:02:46.943Z] info: Worker worker-0 completed task 1747051366841.6284
+[2025-05-12T12:02:46.944Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:02:46 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:02:46.944Z] info: Worker worker-1 completed task 1747051366842.8667
+[2025-05-12T12:02:46.959Z] info: Task 1747051366959.01 added to queue
+[2025-05-12T12:02:46.959Z] info: Assigning task 1747051366959.01 to worker-0
+[2025-05-12T12:02:47.061Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:02:47 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:02:47.061Z] info: Worker worker-0 completed task 1747051366959.01
+[2025-05-12T12:03:20.188Z] info: Task 1747051400188.678 added to queue
+[2025-05-12T12:03:20.188Z] info: Assigning task 1747051400188.678 to worker-0
+[2025-05-12T12:03:20.192Z] info: Task 1747051400192.5051 added to queue
+[2025-05-12T12:03:20.193Z] info: Assigning task 1747051400192.5051 to worker-1
+[2025-05-12T12:03:20.289Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:20 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:20.289Z] info: Worker worker-0 completed task 1747051400188.678
+[2025-05-12T12:03:20.294Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:20 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:20.294Z] info: Worker worker-1 completed task 1747051400192.5051
+[2025-05-12T12:03:20.318Z] info: Task 1747051400318.924 added to queue
+[2025-05-12T12:03:20.318Z] info: Assigning task 1747051400318.924 to worker-0
+[2025-05-12T12:03:20.420Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:20 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:20.421Z] info: Worker worker-0 completed task 1747051400318.924
+[2025-05-12T12:03:26.490Z] info: Task 1747051406490.4392 added to queue
+[2025-05-12T12:03:26.490Z] info: Assigning task 1747051406490.4392 to worker-0
+[2025-05-12T12:03:26.491Z] info: Task 1747051406491.5598 added to queue
+[2025-05-12T12:03:26.491Z] info: Assigning task 1747051406491.5598 to worker-1
+[2025-05-12T12:03:26.592Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:26 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:26.592Z] info: Worker worker-0 completed task 1747051406490.4392
+[2025-05-12T12:03:26.593Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:26 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:26.593Z] info: Worker worker-1 completed task 1747051406491.5598
+[2025-05-12T12:03:52.575Z] info: Task 1747051432575.6057 added to queue
+[2025-05-12T12:03:52.575Z] info: Assigning task 1747051432575.6057 to worker-0
+[2025-05-12T12:03:52.577Z] info: Task 1747051432577.6616 added to queue
+[2025-05-12T12:03:52.577Z] info: Assigning task 1747051432577.6616 to worker-1
+[2025-05-12T12:03:52.677Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:52 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:52.677Z] info: Worker worker-0 completed task 1747051432575.6057
+[2025-05-12T12:03:52.679Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:52 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:52.679Z] info: Worker worker-1 completed task 1747051432577.6616
+[2025-05-12T12:03:52.693Z] info: Task 1747051432693.4556 added to queue
+[2025-05-12T12:03:52.693Z] info: Assigning task 1747051432693.4556 to worker-0
+[2025-05-12T12:03:52.795Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:03:52 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:03:52.795Z] info: Worker worker-0 completed task 1747051432693.4556
+[2025-05-12T12:05:57.639Z] info: Task 1747051557639.899 added to queue
+[2025-05-12T12:05:57.639Z] info: Assigning task 1747051557639.899 to worker-0
+[2025-05-12T12:05:57.741Z] info: Worker worker-0 completed task 1747051557639.899
+[2025-05-12T12:05:57.823Z] info: Task 1747051557823.7646 added to queue
+[2025-05-12T12:05:57.823Z] info: Assigning task 1747051557823.7646 to worker-0
+[2025-05-12T12:05:57.845Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:05:57 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:05:57.845Z] info: Worker worker-0 completed task 1747051557823.7646
+[2025-05-12T12:06:01.255Z] info: Task 1747051561255.775 added to queue
+[2025-05-12T12:06:01.255Z] info: Assigning task 1747051561255.775 to worker-0
+[2025-05-12T12:06:01.281Z] info: Subscribed successfully
+[2025-05-12T12:06:01.281Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:01 +0000] "POST /subscribe HTTP/1.1" 200 37 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:01.281Z] info: Worker worker-0 completed task 1747051561255.775
+[2025-05-12T12:06:26.713Z] info: Task 1747051586713.6194 added to queue
+[2025-05-12T12:06:26.713Z] info: Assigning task 1747051586713.6194 to worker-0
+[2025-05-12T12:06:26.740Z] info: Unsubscribed successfully
+[2025-05-12T12:06:26.740Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:26 +0000] "POST /unsubscribe HTTP/1.1" 200 39 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:26.740Z] info: Worker worker-0 completed task 1747051586713.6194
+[2025-05-12T12:06:48.448Z] info: Task 1747051608448.4421 added to queue
+[2025-05-12T12:06:48.448Z] info: Assigning task 1747051608448.4421 to worker-0
+[2025-05-12T12:06:48.549Z] info: Worker worker-0 completed task 1747051608448.4421
+[2025-05-12T12:06:48.632Z] info: Task 1747051608632.7253 added to queue
+[2025-05-12T12:06:48.632Z] info: Assigning task 1747051608632.7253 to worker-0
+[2025-05-12T12:06:48.664Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:48 +0000] "POST /login HTTP/1.1" 200 170 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:48.664Z] info: Worker worker-0 completed task 1747051608632.7253
+[2025-05-12T12:06:51.160Z] info: Task 1747051611160.0974 added to queue
+[2025-05-12T12:06:51.160Z] info: Assigning task 1747051611160.0974 to worker-0
+[2025-05-12T12:06:51.168Z] info: Task 1747051611168.7285 added to queue
+[2025-05-12T12:06:51.168Z] info: Assigning task 1747051611168.7285 to worker-1
+[2025-05-12T12:06:51.262Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:51 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:51.263Z] info: Worker worker-0 completed task 1747051611160.0974
+[2025-05-12T12:06:51.269Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:51 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:51.269Z] info: Worker worker-1 completed task 1747051611168.7285
+[2025-05-12T12:06:54.838Z] info: Task 1747051614838.255 added to queue
+[2025-05-12T12:06:54.838Z] info: Assigning task 1747051614838.255 to worker-0
+[2025-05-12T12:06:54.940Z] info: Worker worker-0 completed task 1747051614838.255
+[2025-05-12T12:06:55.022Z] info: Task 1747051615022.5417 added to queue
+[2025-05-12T12:06:55.022Z] info: Assigning task 1747051615022.5417 to worker-0
+[2025-05-12T12:06:55.049Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:55 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:55.049Z] info: Worker worker-0 completed task 1747051615022.5417
+[2025-05-12T12:06:57.270Z] info: Task 1747051617270.2832 added to queue
+[2025-05-12T12:06:57.270Z] info: Assigning task 1747051617270.2832 to worker-0
+[2025-05-12T12:06:57.270Z] info: Task 1747051617270.0142 added to queue
+[2025-05-12T12:06:57.270Z] info: Assigning task 1747051617270.0142 to worker-1
+[2025-05-12T12:06:57.372Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:57 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:57.372Z] info: Worker worker-0 completed task 1747051617270.2832
+[2025-05-12T12:06:57.373Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:57 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:57.373Z] info: Worker worker-1 completed task 1747051617270.0142
+[2025-05-12T12:06:57.405Z] info: Task 1747051617405.7578 added to queue
+[2025-05-12T12:06:57.405Z] info: Assigning task 1747051617405.7578 to worker-0
+[2025-05-12T12:06:57.418Z] info: Task 1747051617418.3267 added to queue
+[2025-05-12T12:06:57.418Z] info: Assigning task 1747051617418.3267 to worker-1
+[2025-05-12T12:06:57.506Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:57 +0000] "GET /user/subscriptions HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:57.506Z] info: Worker worker-0 completed task 1747051617405.7578
+[2025-05-12T12:06:57.519Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:06:57 +0000] "GET /user/subscriptions HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:06:57.519Z] info: Worker worker-1 completed task 1747051617418.3267
+[2025-05-12T12:07:01.855Z] info: Task 1747051621855.8315 added to queue
+[2025-05-12T12:07:01.855Z] info: Assigning task 1747051621855.8315 to worker-0
+[2025-05-12T12:07:01.957Z] info: Worker worker-0 completed task 1747051621855.8315
+[2025-05-12T12:07:02.040Z] info: Task 1747051622040.5845 added to queue
+[2025-05-12T12:07:02.040Z] info: Assigning task 1747051622040.5845 to worker-0
+[2025-05-12T12:07:02.067Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:02 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:02.067Z] info: Worker worker-0 completed task 1747051622040.5845
+[2025-05-12T12:07:04.225Z] info: Task 1747051624225.8682 added to queue
+[2025-05-12T12:07:04.225Z] info: Assigning task 1747051624225.8682 to worker-0
+[2025-05-12T12:07:04.231Z] info: Task 1747051624231.1255 added to queue
+[2025-05-12T12:07:04.231Z] info: Assigning task 1747051624231.1255 to worker-1
+[2025-05-12T12:07:04.327Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:04 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:04.327Z] info: Worker worker-0 completed task 1747051624225.8682
+[2025-05-12T12:07:04.333Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:04 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:04.333Z] info: Worker worker-1 completed task 1747051624231.1255
+[2025-05-12T12:07:04.363Z] info: Task 1747051624363.106 added to queue
+[2025-05-12T12:07:04.364Z] info: Assigning task 1747051624363.106 to worker-0
+[2025-05-12T12:07:04.364Z] info: Task 1747051624364.6614 added to queue
+[2025-05-12T12:07:04.364Z] info: Assigning task 1747051624364.6614 to worker-1
+[2025-05-12T12:07:04.465Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:04 +0000] "GET /user/subscriptions HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:04.465Z] info: Worker worker-0 completed task 1747051624363.106
+[2025-05-12T12:07:04.466Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:04 +0000] "GET /user/subscriptions HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:04.466Z] info: Worker worker-1 completed task 1747051624364.6614
+[2025-05-12T12:07:05.419Z] info: Task 1747051625419.1233 added to queue
+[2025-05-12T12:07:05.419Z] info: Assigning task 1747051625419.1233 to worker-0
+[2025-05-12T12:07:05.424Z] info: Task 1747051625424.7024 added to queue
+[2025-05-12T12:07:05.424Z] info: Assigning task 1747051625424.7024 to worker-1
+[2025-05-12T12:07:05.521Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:05 +0000] "GET /user HTTP/1.1" 200 129 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:05.521Z] info: Worker worker-0 completed task 1747051625419.1233
+[2025-05-12T12:07:05.524Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:05 +0000] "GET /user HTTP/1.1" 200 129 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:05.524Z] info: Worker worker-1 completed task 1747051625424.7024
+[2025-05-12T12:07:05.544Z] info: Task 1747051625544.7048 added to queue
+[2025-05-12T12:07:05.544Z] info: Assigning task 1747051625544.7048 to worker-0
+[2025-05-12T12:07:05.645Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:05 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:05.645Z] info: Worker worker-0 completed task 1747051625544.7048
+[2025-05-12T12:07:09.904Z] info: Task 1747051629904.1628 added to queue
+[2025-05-12T12:07:09.904Z] info: Assigning task 1747051629904.1628 to worker-0
+[2025-05-12T12:07:10.004Z] info: Worker worker-0 completed task 1747051629904.1628
+[2025-05-12T12:07:10.086Z] info: Task 1747051630086.7793 added to queue
+[2025-05-12T12:07:10.086Z] info: Assigning task 1747051630086.7793 to worker-0
+[2025-05-12T12:07:10.113Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:10 +0000] "POST /login HTTP/1.1" 200 170 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:10.113Z] info: Worker worker-0 completed task 1747051630086.7793
+[2025-05-12T12:07:11.935Z] info: Task 1747051631935.8066 added to queue
+[2025-05-12T12:07:11.935Z] info: Assigning task 1747051631935.8066 to worker-0
+[2025-05-12T12:07:11.936Z] info: Task 1747051631936.8748 added to queue
+[2025-05-12T12:07:11.936Z] info: Assigning task 1747051631936.8748 to worker-1
+[2025-05-12T12:07:12.036Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:12 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:12.037Z] info: Worker worker-0 completed task 1747051631935.8066
+[2025-05-12T12:07:12.037Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:07:12 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:07:12.037Z] info: Worker worker-1 completed task 1747051631936.8748
+[2025-05-12T12:08:03.586Z] info: Task 1747051683586.9395 added to queue
+[2025-05-12T12:08:03.586Z] info: Assigning task 1747051683586.9395 to worker-0
+[2025-05-12T12:08:03.587Z] info: Task 1747051683587.4988 added to queue
+[2025-05-12T12:08:03.587Z] info: Assigning task 1747051683587.4988 to worker-1
+[2025-05-12T12:08:03.688Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:08:03 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:08:03.688Z] info: Worker worker-0 completed task 1747051683586.9395
+[2025-05-12T12:08:03.689Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:08:03 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:08:03.689Z] info: Worker worker-1 completed task 1747051683587.4988
+[2025-05-12T12:08:41.784Z] info: Task 1747051721784.388 added to queue
+[2025-05-12T12:08:41.784Z] info: Assigning task 1747051721784.388 to worker-0
+[2025-05-12T12:08:41.885Z] info: Worker worker-0 completed task 1747051721784.388
+[2025-05-12T12:08:41.967Z] info: Task 1747051721967.2192 added to queue
+[2025-05-12T12:08:41.967Z] info: Assigning task 1747051721967.2192 to worker-0
+[2025-05-12T12:08:41.994Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:08:41 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:08:41.994Z] info: Worker worker-0 completed task 1747051721967.2192
+[2025-05-12T12:09:16.986Z] info: Task 1747051756986.6445 added to queue
+[2025-05-12T12:09:16.986Z] info: Assigning task 1747051756986.6445 to worker-0
+[2025-05-12T12:09:17.088Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:09:17 +0000] "POST /login HTTP/1.1" 400 26 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:09:17.088Z] info: Worker worker-0 completed task 1747051756986.6445
+[2025-05-12T12:09:50.897Z] info: Task 1747051790897.5442 added to queue
+[2025-05-12T12:09:50.897Z] info: Assigning task 1747051790897.5442 to worker-0
+[2025-05-12T12:09:50.999Z] info: Worker worker-0 completed task 1747051790897.5442
+[2025-05-12T12:09:51.081Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:09:51 +0000] "POST /login HTTP/1.1" 400 30 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:11:27.696Z] info: Task 1747051887696.283 added to queue
+[2025-05-12T12:11:27.696Z] info: Assigning task 1747051887696.283 to worker-0
+[2025-05-12T12:11:27.724Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:11:27 +0000] "POST /register HTTP/1.1" 200 29 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:11:27.724Z] info: Worker worker-0 completed task 1747051887696.283
+[2025-05-12T12:11:48.328Z] info: Task 1747051908328.7437 added to queue
+[2025-05-12T12:11:48.328Z] info: Assigning task 1747051908328.7437 to worker-0
+[2025-05-12T12:11:48.330Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:11:48 +0000] "POST /register HTTP/1.1" 400 31 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:20.328Z] info: Task 1747051940328.2246 added to queue
+[2025-05-12T12:12:20.328Z] info: Assigning task 1747051940328.2246 to worker-1
+[2025-05-12T12:12:20.330Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:20 +0000] "POST /register HTTP/1.1" 400 31 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:48.584Z] info: Task 1747051968584.41 added to queue
+[2025-05-12T12:12:48.584Z] info: Assigning task 1747051968584.41 to worker-2
+[2025-05-12T12:12:48.616Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:48 +0000] "POST /register HTTP/1.1" 200 29 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:48.616Z] info: Worker worker-2 completed task 1747051968584.41
+[2025-05-12T12:12:50.162Z] info: Task 1747051970162.4316 added to queue
+[2025-05-12T12:12:50.162Z] info: Assigning task 1747051970162.4316 to worker-2
+[2025-05-12T12:12:50.163Z] info: Task 1747051970163.4897 added to queue
+[2025-05-12T12:12:50.264Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:50 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:50.264Z] info: Worker worker-2 completed task 1747051970162.4316
+[2025-05-12T12:12:50.264Z] info: Assigning task 1747051970163.4897 to worker-2
+[2025-05-12T12:12:50.273Z] info: Task 1747051970273.3655 added to queue
+[2025-05-12T12:12:50.365Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:50 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:50.365Z] info: Worker worker-2 completed task 1747051970163.4897
+[2025-05-12T12:12:50.365Z] info: Assigning task 1747051970273.3655 to worker-2
+[2025-05-12T12:12:50.467Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:50 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:50.467Z] info: Worker worker-2 completed task 1747051970273.3655
+[2025-05-12T12:12:52.971Z] info: Task 1747051972971.753 added to queue
+[2025-05-12T12:12:52.971Z] info: Assigning task 1747051972971.753 to worker-2
+[2025-05-12T12:12:52.971Z] info: Task 1747051972971.3977 added to queue
+[2025-05-12T12:12:53.073Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.073Z] info: Worker worker-2 completed task 1747051972971.753
+[2025-05-12T12:12:53.073Z] info: Assigning task 1747051972971.3977 to worker-2
+[2025-05-12T12:12:53.078Z] info: Task 1747051973078.0615 added to queue
+[2025-05-12T12:12:53.175Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.175Z] info: Worker worker-2 completed task 1747051972971.3977
+[2025-05-12T12:12:53.175Z] info: Assigning task 1747051973078.0615 to worker-2
+[2025-05-12T12:12:53.181Z] info: Task 1747051973181.683 added to queue
+[2025-05-12T12:12:53.276Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /user/subscriptions HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.276Z] info: Worker worker-2 completed task 1747051973078.0615
+[2025-05-12T12:12:53.276Z] info: Assigning task 1747051973181.683 to worker-2
+[2025-05-12T12:12:53.378Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /user/subscriptions HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.378Z] info: Worker worker-2 completed task 1747051973181.683
+[2025-05-12T12:12:53.587Z] info: Task 1747051973587.7397 added to queue
+[2025-05-12T12:12:53.587Z] info: Assigning task 1747051973587.7397 to worker-2
+[2025-05-12T12:12:53.588Z] info: Task 1747051973588.8936 added to queue
+[2025-05-12T12:12:53.690Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.690Z] info: Worker worker-2 completed task 1747051973587.7397
+[2025-05-12T12:12:53.690Z] info: Assigning task 1747051973588.8936 to worker-2
+[2025-05-12T12:12:53.705Z] info: Task 1747051973705.6555 added to queue
+[2025-05-12T12:12:53.792Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /user HTTP/1.1" 200 106 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.792Z] info: Worker worker-2 completed task 1747051973588.8936
+[2025-05-12T12:12:53.792Z] info: Assigning task 1747051973705.6555 to worker-2
+[2025-05-12T12:12:53.894Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:12:53 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:12:53.894Z] info: Worker worker-2 completed task 1747051973705.6555
+[2025-05-12T12:13:03.912Z] info: Task 1747051983912.5156 added to queue
+[2025-05-12T12:13:03.912Z] info: Assigning task 1747051983912.5156 to worker-2
+[2025-05-12T12:13:03.939Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:03 +0000] "POST /register HTTP/1.1" 200 29 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:03.939Z] info: Worker worker-2 completed task 1747051983912.5156
+[2025-05-12T12:13:07.229Z] info: Task 1747051987228.827 added to queue
+[2025-05-12T12:13:07.229Z] info: Assigning task 1747051987228.827 to worker-2
+[2025-05-12T12:13:07.329Z] info: Worker worker-2 completed task 1747051987228.827
+[2025-05-12T12:13:07.412Z] info: Task 1747051987412.524 added to queue
+[2025-05-12T12:13:07.412Z] info: Assigning task 1747051987412.524 to worker-2
+[2025-05-12T12:13:07.439Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:07 +0000] "POST /login HTTP/1.1" 200 170 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:07.439Z] info: Worker worker-2 completed task 1747051987412.524
+[2025-05-12T12:13:09.081Z] info: Task 1747051989081.7185 added to queue
+[2025-05-12T12:13:09.081Z] info: Assigning task 1747051989081.7185 to worker-2
+[2025-05-12T12:13:09.084Z] info: Task 1747051989084.0325 added to queue
+[2025-05-12T12:13:09.183Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /user HTTP/1.1" 200 110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.183Z] info: Worker worker-2 completed task 1747051989081.7185
+[2025-05-12T12:13:09.183Z] info: Assigning task 1747051989084.0325 to worker-2
+[2025-05-12T12:13:09.190Z] info: Task 1747051989190.1274 added to queue
+[2025-05-12T12:13:09.204Z] info: Task 1747051989204.1526 added to queue
+[2025-05-12T12:13:09.285Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /user HTTP/1.1" 200 110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.285Z] info: Worker worker-2 completed task 1747051989084.0325
+[2025-05-12T12:13:09.285Z] info: Assigning task 1747051989190.1274 to worker-2
+[2025-05-12T12:13:09.293Z] info: Task 1747051989293.6765 added to queue
+[2025-05-12T12:13:09.387Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.387Z] info: Worker worker-2 completed task 1747051989190.1274
+[2025-05-12T12:13:09.387Z] info: Assigning task 1747051989204.1526 to worker-2
+[2025-05-12T12:13:09.489Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.489Z] info: Worker worker-2 completed task 1747051989204.1526
+[2025-05-12T12:13:09.489Z] info: Assigning task 1747051989293.6765 to worker-2
+[2025-05-12T12:13:09.496Z] info: Task 1747051989496.9766 added to queue
+[2025-05-12T12:13:09.590Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.590Z] info: Worker worker-2 completed task 1747051989293.6765
+[2025-05-12T12:13:09.590Z] info: Assigning task 1747051989496.9766 to worker-2
+[2025-05-12T12:13:09.691Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:13:09 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:13:09.691Z] info: Worker worker-2 completed task 1747051989496.9766
+[2025-05-12T12:16:10.621Z] info: Task 1747052170621.6553 added to queue
+[2025-05-12T12:16:10.621Z] info: Assigning task 1747052170621.6553 to worker-2
+[2025-05-12T12:16:10.622Z] info: Task 1747052170622.972 added to queue
+[2025-05-12T12:16:10.722Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:10 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:10.723Z] info: Worker worker-2 completed task 1747052170621.6553
+[2025-05-12T12:16:10.723Z] info: Assigning task 1747052170622.972 to worker-2
+[2025-05-12T12:16:10.733Z] info: Task 1747052170733.7024 added to queue
+[2025-05-12T12:16:10.742Z] info: Task 1747052170742.0964 added to queue
+[2025-05-12T12:16:10.824Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:10 +0000] "GET /user HTTP/1.1" 200 110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:10.825Z] info: Worker worker-2 completed task 1747052170622.972
+[2025-05-12T12:16:10.825Z] info: Assigning task 1747052170733.7024 to worker-2
+[2025-05-12T12:16:10.833Z] info: Task 1747052170833.1157 added to queue
+[2025-05-12T12:16:10.927Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:10 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:10.927Z] info: Worker worker-2 completed task 1747052170733.7024
+[2025-05-12T12:16:10.927Z] info: Assigning task 1747052170742.0964 to worker-2
+[2025-05-12T12:16:11.029Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:11 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:11.029Z] info: Worker worker-2 completed task 1747052170742.0964
+[2025-05-12T12:16:11.029Z] info: Assigning task 1747052170833.1157 to worker-2
+[2025-05-12T12:16:11.039Z] info: Task 1747052171039.6147 added to queue
+[2025-05-12T12:16:11.131Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:11 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:11.131Z] info: Worker worker-2 completed task 1747052170833.1157
+[2025-05-12T12:16:11.131Z] info: Assigning task 1747052171039.6147 to worker-2
+[2025-05-12T12:16:11.233Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:11 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:11.234Z] info: Worker worker-2 completed task 1747052171039.6147
+[2025-05-12T12:16:13.252Z] info: Task 1747052173252.5327 added to queue
+[2025-05-12T12:16:13.252Z] info: Assigning task 1747052173252.5327 to worker-2
+[2025-05-12T12:16:13.258Z] info: Task 1747052173258.3552 added to queue
+[2025-05-12T12:16:13.355Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:13 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:13.355Z] info: Worker worker-2 completed task 1747052173252.5327
+[2025-05-12T12:16:13.355Z] info: Assigning task 1747052173258.3552 to worker-2
+[2025-05-12T12:16:13.457Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:16:13 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:16:13.457Z] info: Worker worker-2 completed task 1747052173258.3552
+[2025-05-12T12:18:35.047Z] info: Task 1747052315047.2632 added to queue
+[2025-05-12T12:18:35.047Z] info: Assigning task 1747052315047.2632 to worker-2
+[2025-05-12T12:18:35.048Z] info: Task 1747052315048.124 added to queue
+[2025-05-12T12:18:35.149Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.149Z] info: Worker worker-2 completed task 1747052315047.2632
+[2025-05-12T12:18:35.149Z] info: Assigning task 1747052315048.124 to worker-2
+[2025-05-12T12:18:35.158Z] info: Task 1747052315158.2827 added to queue
+[2025-05-12T12:18:35.170Z] info: Task 1747052315170.1245 added to queue
+[2025-05-12T12:18:35.252Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /user HTTP/1.1" 200 110 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.252Z] info: Worker worker-2 completed task 1747052315048.124
+[2025-05-12T12:18:35.252Z] info: Assigning task 1747052315158.2827 to worker-2
+[2025-05-12T12:18:35.260Z] info: Task 1747052315260.781 added to queue
+[2025-05-12T12:18:35.353Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.353Z] info: Worker worker-2 completed task 1747052315158.2827
+[2025-05-12T12:18:35.353Z] info: Assigning task 1747052315170.1245 to worker-2
+[2025-05-12T12:18:35.455Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.455Z] info: Worker worker-2 completed task 1747052315170.1245
+[2025-05-12T12:18:35.455Z] info: Assigning task 1747052315260.781 to worker-2
+[2025-05-12T12:18:35.460Z] info: Task 1747052315460.1475 added to queue
+[2025-05-12T12:18:35.556Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.556Z] info: Worker worker-2 completed task 1747052315260.781
+[2025-05-12T12:18:35.556Z] info: Assigning task 1747052315460.1475 to worker-2
+[2025-05-12T12:18:35.658Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:35 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:35.658Z] info: Worker worker-2 completed task 1747052315460.1475
+[2025-05-12T12:18:45.196Z] info: Task 1747052325196.4473 added to queue
+[2025-05-12T12:18:45.196Z] info: Assigning task 1747052325196.4473 to worker-2
+[2025-05-12T12:18:45.223Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:18:45 +0000] "POST /user HTTP/1.1" 200 38 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:18:45.223Z] info: Worker worker-2 completed task 1747052325196.4473
+[2025-05-12T12:19:21.947Z] info: Task 1747052361947.972 added to queue
+[2025-05-12T12:19:21.947Z] info: Assigning task 1747052361947.972 to worker-2
+[2025-05-12T12:19:21.948Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:19:21 +0000] "POST /user HTTP/1.1" 200 38 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:19:21.948Z] info: Worker worker-2 completed task 1747052361947.972
+[2025-05-12T12:19:49.458Z] info: Task 1747052389458.8616 added to queue
+[2025-05-12T12:19:49.459Z] info: Assigning task 1747052389458.8616 to worker-2
+[2025-05-12T12:19:49.485Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:19:49 +0000] "POST /user HTTP/1.1" 200 38 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:19:49.485Z] info: Worker worker-2 completed task 1747052389458.8616
+[2025-05-12T12:20:32.460Z] info: Task 1747052432460.7231 added to queue
+[2025-05-12T12:20:32.460Z] info: Assigning task 1747052432460.7231 to worker-2
+[2025-05-12T12:20:32.461Z] info: Task 1747052432461.5588 added to queue
+[2025-05-12T12:20:32.562Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:32 +0000] "GET /user HTTP/1.1" 200 121 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:32.562Z] info: Worker worker-2 completed task 1747052432460.7231
+[2025-05-12T12:20:32.562Z] info: Assigning task 1747052432461.5588 to worker-2
+[2025-05-12T12:20:32.571Z] info: Task 1747052432571.7366 added to queue
+[2025-05-12T12:20:32.579Z] info: Task 1747052432579.2922 added to queue
+[2025-05-12T12:20:32.665Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:32 +0000] "GET /user HTTP/1.1" 200 121 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:32.665Z] info: Worker worker-2 completed task 1747052432461.5588
+[2025-05-12T12:20:32.665Z] info: Assigning task 1747052432571.7366 to worker-2
+[2025-05-12T12:20:32.671Z] info: Task 1747052432671.9253 added to queue
+[2025-05-12T12:20:32.765Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:32 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:32.765Z] info: Worker worker-2 completed task 1747052432571.7366
+[2025-05-12T12:20:32.766Z] info: Assigning task 1747052432579.2922 to worker-2
+[2025-05-12T12:20:32.867Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:32 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:32.867Z] info: Worker worker-2 completed task 1747052432579.2922
+[2025-05-12T12:20:32.867Z] info: Assigning task 1747052432671.9253 to worker-2
+[2025-05-12T12:20:32.877Z] info: Task 1747052432877.3022 added to queue
+[2025-05-12T12:20:32.969Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:32 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:32.969Z] info: Worker worker-2 completed task 1747052432671.9253
+[2025-05-12T12:20:32.969Z] info: Assigning task 1747052432877.3022 to worker-2
+[2025-05-12T12:20:33.071Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:33 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:33.071Z] info: Worker worker-2 completed task 1747052432877.3022
+[2025-05-12T12:20:36.459Z] info: Task 1747052436459.94 added to queue
+[2025-05-12T12:20:36.459Z] info: Assigning task 1747052436459.94 to worker-2
+[2025-05-12T12:20:36.560Z] info: Worker worker-2 completed task 1747052436459.94
+[2025-05-12T12:20:36.643Z] info: Task 1747052436643.1357 added to queue
+[2025-05-12T12:20:36.643Z] info: Assigning task 1747052436643.1357 to worker-2
+[2025-05-12T12:20:36.669Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:36 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:36.669Z] info: Worker worker-2 completed task 1747052436643.1357
+[2025-05-12T12:20:38.618Z] info: Task 1747052438618.0579 added to queue
+[2025-05-12T12:20:38.618Z] info: Assigning task 1747052438618.0579 to worker-2
+[2025-05-12T12:20:38.619Z] info: Task 1747052438619.0554 added to queue
+[2025-05-12T12:20:38.720Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:38 +0000] "GET /user HTTP/1.1" 200 125 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:38.720Z] info: Worker worker-2 completed task 1747052438618.0579
+[2025-05-12T12:20:38.720Z] info: Assigning task 1747052438619.0554 to worker-2
+[2025-05-12T12:20:38.733Z] info: Task 1747052438733.287 added to queue
+[2025-05-12T12:20:38.822Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:38 +0000] "GET /user HTTP/1.1" 200 125 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:38.822Z] info: Worker worker-2 completed task 1747052438619.0554
+[2025-05-12T12:20:38.822Z] info: Assigning task 1747052438733.287 to worker-2
+[2025-05-12T12:20:38.924Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:38 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:38.924Z] info: Worker worker-2 completed task 1747052438733.287
+[2025-05-12T12:20:42.193Z] info: Task 1747052442193.8772 added to queue
+[2025-05-12T12:20:42.193Z] info: Assigning task 1747052442193.8772 to worker-2
+[2025-05-12T12:20:42.219Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:20:42 +0000] "POST /user HTTP/1.1" 200 38 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:20:42.219Z] info: Worker worker-2 completed task 1747052442193.8772
+[2025-05-12T12:21:29.528Z] info: Task 1747052489528.682 added to queue
+[2025-05-12T12:21:29.528Z] info: Assigning task 1747052489528.682 to worker-2
+[2025-05-12T12:21:29.533Z] info: Task 1747052489533.1743 added to queue
+[2025-05-12T12:21:29.630Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:29 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:29.631Z] info: Worker worker-2 completed task 1747052489528.682
+[2025-05-12T12:21:29.631Z] info: Assigning task 1747052489533.1743 to worker-2
+[2025-05-12T12:21:29.672Z] info: Task 1747052489672.7642 added to queue
+[2025-05-12T12:21:29.733Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:29 +0000] "GET /jobs HTTP/1.1" 200 267 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:29.733Z] info: Worker worker-2 completed task 1747052489533.1743
+[2025-05-12T12:21:29.733Z] info: Assigning task 1747052489672.7642 to worker-2
+[2025-05-12T12:21:29.743Z] info: Task 1747052489743.145 added to queue
+[2025-05-12T12:21:29.835Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:29 +0000] "GET /user/subscriptions HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:29.835Z] info: Worker worker-2 completed task 1747052489672.7642
+[2025-05-12T12:21:29.835Z] info: Assigning task 1747052489743.145 to worker-2
+[2025-05-12T12:21:29.937Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:29 +0000] "GET /user/subscriptions HTTP/1.1" 200 56 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:29.938Z] info: Worker worker-2 completed task 1747052489743.145
+[2025-05-12T12:21:53.215Z] info: Task 1747052513215.2683 added to queue
+[2025-05-12T12:21:53.215Z] info: Assigning task 1747052513215.2683 to worker-2
+[2025-05-12T12:21:53.316Z] info: Worker worker-2 completed task 1747052513215.2683
+[2025-05-12T12:21:53.398Z] info: Task 1747052513398.0173 added to queue
+[2025-05-12T12:21:53.398Z] info: Assigning task 1747052513398.0173 to worker-2
+[2025-05-12T12:21:53.425Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:53 +0000] "POST /login HTTP/1.1" 200 170 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:53.425Z] info: Worker worker-2 completed task 1747052513398.0173
+[2025-05-12T12:21:54.783Z] info: Task 1747052514783.626 added to queue
+[2025-05-12T12:21:54.783Z] info: Assigning task 1747052514783.626 to worker-2
+[2025-05-12T12:21:54.784Z] info: Task 1747052514784.8838 added to queue
+[2025-05-12T12:21:54.885Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:54 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:54.885Z] info: Worker worker-2 completed task 1747052514783.626
+[2025-05-12T12:21:54.885Z] info: Assigning task 1747052514784.8838 to worker-2
+[2025-05-12T12:21:54.894Z] info: Task 1747052514894.006 added to queue
+[2025-05-12T12:21:54.904Z] info: Task 1747052514904.7485 added to queue
+[2025-05-12T12:21:54.987Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:54 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:54.988Z] info: Worker worker-2 completed task 1747052514784.8838
+[2025-05-12T12:21:54.988Z] info: Assigning task 1747052514894.006 to worker-2
+[2025-05-12T12:21:54.995Z] info: Task 1747052514995.388 added to queue
+[2025-05-12T12:21:55.089Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /employer_jobs HTTP/1.1" 200 175 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.089Z] info: Worker worker-2 completed task 1747052514894.006
+[2025-05-12T12:21:55.089Z] info: Assigning task 1747052514904.7485 to worker-2
+[2025-05-12T12:21:55.097Z] info: Task 1747052515097.1245 added to queue
+[2025-05-12T12:21:55.189Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.189Z] info: Worker worker-2 completed task 1747052514904.7485
+[2025-05-12T12:21:55.190Z] info: Assigning task 1747052514995.388 to worker-2
+[2025-05-12T12:21:55.199Z] info: Task 1747052515199.02 added to queue
+[2025-05-12T12:21:55.291Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /employer_jobs HTTP/1.1" 200 175 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.291Z] info: Worker worker-2 completed task 1747052514995.388
+[2025-05-12T12:21:55.291Z] info: Assigning task 1747052515097.1245 to worker-2
+[2025-05-12T12:21:55.299Z] info: Task 1747052515299.135 added to queue
+[2025-05-12T12:21:55.393Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.394Z] info: Worker worker-2 completed task 1747052515097.1245
+[2025-05-12T12:21:55.394Z] info: Assigning task 1747052515199.02 to worker-2
+[2025-05-12T12:21:55.400Z] info: Task 1747052515400.0752 added to queue
+[2025-05-12T12:21:55.495Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.495Z] info: Worker worker-2 completed task 1747052515199.02
+[2025-05-12T12:21:55.495Z] info: Assigning task 1747052515299.135 to worker-2
+[2025-05-12T12:21:55.504Z] info: Task 1747052515504.7153 added to queue
+[2025-05-12T12:21:55.597Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.597Z] info: Worker worker-2 completed task 1747052515299.135
+[2025-05-12T12:21:55.597Z] info: Assigning task 1747052515400.0752 to worker-2
+[2025-05-12T12:21:55.603Z] info: Task 1747052515603.8984 added to queue
+[2025-05-12T12:21:55.697Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /job_subscribers/5 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.698Z] info: Worker worker-2 completed task 1747052515400.0752
+[2025-05-12T12:21:55.698Z] info: Assigning task 1747052515504.7153 to worker-2
+[2025-05-12T12:21:55.799Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.799Z] info: Worker worker-2 completed task 1747052515504.7153
+[2025-05-12T12:21:55.800Z] info: Assigning task 1747052515603.8984 to worker-2
+[2025-05-12T12:21:55.807Z] info: Task 1747052515807.046 added to queue
+[2025-05-12T12:21:55.901Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:55 +0000] "GET /job_subscribers/5 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:55.901Z] info: Worker worker-2 completed task 1747052515603.8984
+[2025-05-12T12:21:55.901Z] info: Assigning task 1747052515807.046 to worker-2
+[2025-05-12T12:21:56.003Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:56 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:56.003Z] info: Worker worker-2 completed task 1747052515807.046
+[2025-05-12T12:21:56.996Z] info: Task 1747052516996.733 added to queue
+[2025-05-12T12:21:56.996Z] info: Assigning task 1747052516996.733 to worker-2
+[2025-05-12T12:21:57.024Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:57 +0000] "DELETE /jobs/5 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:57.024Z] info: Worker worker-2 completed task 1747052516996.733
+[2025-05-12T12:21:57.031Z] info: Task 1747052517031.193 added to queue
+[2025-05-12T12:21:57.031Z] info: Assigning task 1747052517031.193 to worker-2
+[2025-05-12T12:21:57.133Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:57 +0000] "GET /employer_jobs HTTP/1.1" 200 87 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:57.133Z] info: Worker worker-2 completed task 1747052517031.193
+[2025-05-12T12:21:57.140Z] info: Task 1747052517140.4043 added to queue
+[2025-05-12T12:21:57.140Z] info: Assigning task 1747052517140.4043 to worker-2
+[2025-05-12T12:21:57.242Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:57 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:57.242Z] info: Worker worker-2 completed task 1747052517140.4043
+[2025-05-12T12:21:57.761Z] info: Task 1747052517761.8455 added to queue
+[2025-05-12T12:21:57.761Z] info: Assigning task 1747052517761.8455 to worker-2
+[2025-05-12T12:21:57.787Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:57 +0000] "DELETE /jobs/4 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:57.787Z] info: Worker worker-2 completed task 1747052517761.8455
+[2025-05-12T12:21:57.795Z] info: Task 1747052517795.4924 added to queue
+[2025-05-12T12:21:57.795Z] info: Assigning task 1747052517795.4924 to worker-2
+[2025-05-12T12:21:57.895Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:21:57 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:21:57.896Z] info: Worker worker-2 completed task 1747052517795.4924
+[2025-05-12T12:22:17.347Z] info: Task 1747052537347.9536 added to queue
+[2025-05-12T12:22:17.348Z] info: Assigning task 1747052537347.9536 to worker-2
+[2025-05-12T12:22:17.374Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:17 +0000] "POST /jobs HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:17.374Z] info: Worker worker-2 completed task 1747052537347.9536
+[2025-05-12T12:22:18.282Z] info: Task 1747052538282.9033 added to queue
+[2025-05-12T12:22:18.282Z] info: Assigning task 1747052538282.9033 to worker-2
+[2025-05-12T12:22:18.384Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:18 +0000] "GET /employer_jobs HTTP/1.1" 200 103 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:18.384Z] info: Worker worker-2 completed task 1747052538282.9033
+[2025-05-12T12:22:18.392Z] info: Task 1747052538392.4153 added to queue
+[2025-05-12T12:22:18.392Z] info: Assigning task 1747052538392.4153 to worker-2
+[2025-05-12T12:22:18.494Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:18 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:18.494Z] info: Worker worker-2 completed task 1747052538392.4153
+[2025-05-12T12:22:30.103Z] info: Task 1747052550103.81 added to queue
+[2025-05-12T12:22:30.103Z] info: Assigning task 1747052550103.81 to worker-2
+[2025-05-12T12:22:30.104Z] info: Task 1747052550104.4646 added to queue
+[2025-05-12T12:22:30.104Z] info: Task 1747052550104.756 added to queue
+[2025-05-12T12:22:30.110Z] info: Task 1747052550110.2292 added to queue
+[2025-05-12T12:22:30.205Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.205Z] info: Worker worker-2 completed task 1747052550103.81
+[2025-05-12T12:22:30.205Z] info: Assigning task 1747052550104.4646 to worker-2
+[2025-05-12T12:22:30.215Z] info: Task 1747052550215.714 added to queue
+[2025-05-12T12:22:30.218Z] info: Task 1747052550218.4888 added to queue
+[2025-05-12T12:22:30.306Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /jobs HTTP/1.1" 200 195 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.307Z] info: Worker worker-2 completed task 1747052550104.4646
+[2025-05-12T12:22:30.307Z] info: Assigning task 1747052550104.756 to worker-2
+[2025-05-12T12:22:30.408Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.408Z] info: Worker worker-2 completed task 1747052550104.756
+[2025-05-12T12:22:30.408Z] info: Assigning task 1747052550110.2292 to worker-2
+[2025-05-12T12:22:30.416Z] info: Task 1747052550416.2068 added to queue
+[2025-05-12T12:22:30.510Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /jobs HTTP/1.1" 200 195 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.510Z] info: Worker worker-2 completed task 1747052550110.2292
+[2025-05-12T12:22:30.510Z] info: Assigning task 1747052550215.714 to worker-2
+[2025-05-12T12:22:30.611Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.611Z] info: Worker worker-2 completed task 1747052550215.714
+[2025-05-12T12:22:30.611Z] info: Assigning task 1747052550218.4888 to worker-2
+[2025-05-12T12:22:30.619Z] info: Task 1747052550619.2344 added to queue
+[2025-05-12T12:22:30.712Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.712Z] info: Worker worker-2 completed task 1747052550218.4888
+[2025-05-12T12:22:30.712Z] info: Assigning task 1747052550416.2068 to worker-2
+[2025-05-12T12:22:30.718Z] info: Task 1747052550718.5122 added to queue
+[2025-05-12T12:22:30.814Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /employer_jobs HTTP/1.1" 200 103 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.814Z] info: Worker worker-2 completed task 1747052550416.2068
+[2025-05-12T12:22:30.814Z] info: Assigning task 1747052550619.2344 to worker-2
+[2025-05-12T12:22:30.818Z] info: Task 1747052550818.6372 added to queue
+[2025-05-12T12:22:30.915Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:30 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:30.915Z] info: Worker worker-2 completed task 1747052550619.2344
+[2025-05-12T12:22:30.915Z] info: Assigning task 1747052550718.5122 to worker-2
+[2025-05-12T12:22:31.017Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:31 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:31.017Z] info: Worker worker-2 completed task 1747052550718.5122
+[2025-05-12T12:22:31.017Z] info: Assigning task 1747052550818.6372 to worker-2
+[2025-05-12T12:22:31.022Z] info: Task 1747052551022.998 added to queue
+[2025-05-12T12:22:31.118Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:31 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:31.118Z] info: Worker worker-2 completed task 1747052550818.6372
+[2025-05-12T12:22:31.119Z] info: Assigning task 1747052551022.998 to worker-2
+[2025-05-12T12:22:31.220Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:31 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:31.220Z] info: Worker worker-2 completed task 1747052551022.998
+[2025-05-12T12:22:33.488Z] info: Task 1747052553488.8257 added to queue
+[2025-05-12T12:22:33.488Z] info: Assigning task 1747052553488.8257 to worker-2
+[2025-05-12T12:22:33.488Z] info: Task 1747052553488.0283 added to queue
+[2025-05-12T12:22:33.590Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:33 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:33.590Z] info: Worker worker-2 completed task 1747052553488.8257
+[2025-05-12T12:22:33.590Z] info: Assigning task 1747052553488.0283 to worker-2
+[2025-05-12T12:22:33.603Z] info: Task 1747052553603.922 added to queue
+[2025-05-12T12:22:33.613Z] info: Task 1747052553613.4883 added to queue
+[2025-05-12T12:22:33.692Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:33 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:33.692Z] info: Worker worker-2 completed task 1747052553488.0283
+[2025-05-12T12:22:33.692Z] info: Assigning task 1747052553603.922 to worker-2
+[2025-05-12T12:22:33.700Z] info: Task 1747052553700.23 added to queue
+[2025-05-12T12:22:33.794Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:33 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:33.794Z] info: Worker worker-2 completed task 1747052553603.922
+[2025-05-12T12:22:33.794Z] info: Assigning task 1747052553613.4883 to worker-2
+[2025-05-12T12:22:33.802Z] info: Task 1747052553802.8374 added to queue
+[2025-05-12T12:22:33.896Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:33 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:33.896Z] info: Worker worker-2 completed task 1747052553613.4883
+[2025-05-12T12:22:33.896Z] info: Assigning task 1747052553700.23 to worker-2
+[2025-05-12T12:22:33.904Z] info: Task 1747052553904.5925 added to queue
+[2025-05-12T12:22:33.998Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:33 +0000] "GET /employer_jobs HTTP/1.1" 200 103 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:33.998Z] info: Worker worker-2 completed task 1747052553700.23
+[2025-05-12T12:22:33.998Z] info: Assigning task 1747052553802.8374 to worker-2
+[2025-05-12T12:22:34.005Z] info: Task 1747052554005.7468 added to queue
+[2025-05-12T12:22:34.100Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:34 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:34.101Z] info: Worker worker-2 completed task 1747052553802.8374
+[2025-05-12T12:22:34.101Z] info: Assigning task 1747052553904.5925 to worker-2
+[2025-05-12T12:22:34.202Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:34 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:34.203Z] info: Worker worker-2 completed task 1747052553904.5925
+[2025-05-12T12:22:34.203Z] info: Assigning task 1747052554005.7468 to worker-2
+[2025-05-12T12:22:34.210Z] info: Task 1747052554210.6448 added to queue
+[2025-05-12T12:22:34.304Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:34 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:34.304Z] info: Worker worker-2 completed task 1747052554005.7468
+[2025-05-12T12:22:34.305Z] info: Assigning task 1747052554210.6448 to worker-2
+[2025-05-12T12:22:34.406Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:22:34 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:22:34.406Z] info: Worker worker-2 completed task 1747052554210.6448
+[2025-05-12T12:23:03.106Z] info: Task 1747052583106.1567 added to queue
+[2025-05-12T12:23:03.106Z] info: Assigning task 1747052583106.1567 to worker-2
+[2025-05-12T12:23:03.132Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:03 +0000] "POST /jobs HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:03.132Z] info: Worker worker-2 completed task 1747052583106.1567
+[2025-05-12T12:23:04.637Z] info: Task 1747052584637.3506 added to queue
+[2025-05-12T12:23:04.637Z] info: Assigning task 1747052584637.3506 to worker-2
+[2025-05-12T12:23:04.738Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:04 +0000] "GET /employer_jobs HTTP/1.1" 200 182 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:04.738Z] info: Worker worker-2 completed task 1747052584637.3506
+[2025-05-12T12:23:04.743Z] info: Task 1747052584743.827 added to queue
+[2025-05-12T12:23:04.743Z] info: Assigning task 1747052584743.827 to worker-2
+[2025-05-12T12:23:04.845Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:04 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:04.845Z] info: Worker worker-2 completed task 1747052584743.827
+[2025-05-12T12:23:04.850Z] info: Task 1747052584850.8003 added to queue
+[2025-05-12T12:23:04.850Z] info: Assigning task 1747052584850.8003 to worker-2
+[2025-05-12T12:23:04.950Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:04 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:04.951Z] info: Worker worker-2 completed task 1747052584850.8003
+[2025-05-12T12:23:12.500Z] info: Task 1747052592500.5264 added to queue
+[2025-05-12T12:23:12.500Z] info: Assigning task 1747052592500.5264 to worker-2
+[2025-05-12T12:23:12.527Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:12 +0000] "DELETE /jobs/5 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:12.527Z] info: Worker worker-2 completed task 1747052592500.5264
+[2025-05-12T12:23:12.537Z] info: Task 1747052592537.0854 added to queue
+[2025-05-12T12:23:12.537Z] info: Assigning task 1747052592537.0854 to worker-2
+[2025-05-12T12:23:12.637Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:12 +0000] "GET /employer_jobs HTTP/1.1" 200 103 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:12.638Z] info: Worker worker-2 completed task 1747052592537.0854
+[2025-05-12T12:23:12.646Z] info: Task 1747052592646.5808 added to queue
+[2025-05-12T12:23:12.647Z] info: Assigning task 1747052592646.5808 to worker-2
+[2025-05-12T12:23:12.748Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:12 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:12.748Z] info: Worker worker-2 completed task 1747052592646.5808
+[2025-05-12T12:23:15.796Z] info: Task 1747052595796.5833 added to queue
+[2025-05-12T12:23:15.796Z] info: Assigning task 1747052595796.5833 to worker-2
+[2025-05-12T12:23:15.823Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:15 +0000] "POST /jobs HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:15.823Z] info: Worker worker-2 completed task 1747052595796.5833
+[2025-05-12T12:23:16.674Z] info: Task 1747052596674.4414 added to queue
+[2025-05-12T12:23:16.674Z] info: Assigning task 1747052596674.4414 to worker-2
+[2025-05-12T12:23:16.776Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:16 +0000] "GET /employer_jobs HTTP/1.1" 200 182 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:16.776Z] info: Worker worker-2 completed task 1747052596674.4414
+[2025-05-12T12:23:16.784Z] info: Task 1747052596784.2776 added to queue
+[2025-05-12T12:23:16.785Z] info: Assigning task 1747052596784.2776 to worker-2
+[2025-05-12T12:23:16.886Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:16 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:16.886Z] info: Worker worker-2 completed task 1747052596784.2776
+[2025-05-12T12:23:16.898Z] info: Task 1747052596898.7085 added to queue
+[2025-05-12T12:23:16.898Z] info: Assigning task 1747052596898.7085 to worker-2
+[2025-05-12T12:23:17.000Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:17 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:17.000Z] info: Worker worker-2 completed task 1747052596898.7085
+[2025-05-12T12:23:17.195Z] info: Task 1747052597195.0103 added to queue
+[2025-05-12T12:23:17.195Z] info: Assigning task 1747052597195.0103 to worker-2
+[2025-05-12T12:23:17.222Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:17 +0000] "POST /jobs HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:17.222Z] info: Worker worker-2 completed task 1747052597195.0103
+[2025-05-12T12:23:17.931Z] info: Task 1747052597931.035 added to queue
+[2025-05-12T12:23:17.931Z] info: Assigning task 1747052597931.035 to worker-2
+[2025-05-12T12:23:18.033Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:18 +0000] "GET /employer_jobs HTTP/1.1" 200 261 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:18.033Z] info: Worker worker-2 completed task 1747052597931.035
+[2025-05-12T12:23:18.041Z] info: Task 1747052598041.951 added to queue
+[2025-05-12T12:23:18.042Z] info: Assigning task 1747052598041.951 to worker-2
+[2025-05-12T12:23:18.143Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:18 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:18.143Z] info: Worker worker-2 completed task 1747052598041.951
+[2025-05-12T12:23:18.151Z] info: Task 1747052598151.8938 added to queue
+[2025-05-12T12:23:18.152Z] info: Assigning task 1747052598151.8938 to worker-2
+[2025-05-12T12:23:18.253Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:18 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:18.253Z] info: Worker worker-2 completed task 1747052598151.8938
+[2025-05-12T12:23:18.262Z] info: Task 1747052598262.6853 added to queue
+[2025-05-12T12:23:18.263Z] info: Assigning task 1747052598262.6853 to worker-2
+[2025-05-12T12:23:18.364Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:23:18 +0000] "GET /job_subscribers/6 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:23:18.364Z] info: Worker worker-2 completed task 1747052598262.6853
+[2025-05-12T12:29:46.533Z] info: Task 1747052986533.1216 added to queue
+[2025-05-12T12:29:46.533Z] info: Assigning task 1747052986533.1216 to worker-2
+[2025-05-12T12:29:46.560Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:46 +0000] "DELETE /jobs/6 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:46.561Z] info: Worker worker-2 completed task 1747052986533.1216
+[2025-05-12T12:29:46.570Z] info: Task 1747052986570.904 added to queue
+[2025-05-12T12:29:46.570Z] info: Assigning task 1747052986570.904 to worker-2
+[2025-05-12T12:29:46.672Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:46 +0000] "GET /employer_jobs HTTP/1.1" 200 182 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:46.672Z] info: Worker worker-2 completed task 1747052986570.904
+[2025-05-12T12:29:46.681Z] info: Task 1747052986681.3696 added to queue
+[2025-05-12T12:29:46.681Z] info: Assigning task 1747052986681.3696 to worker-2
+[2025-05-12T12:29:46.783Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:46 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:46.783Z] info: Worker worker-2 completed task 1747052986681.3696
+[2025-05-12T12:29:46.795Z] info: Task 1747052986795.3755 added to queue
+[2025-05-12T12:29:46.795Z] info: Assigning task 1747052986795.3755 to worker-2
+[2025-05-12T12:29:46.896Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:46 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:46.896Z] info: Worker worker-2 completed task 1747052986795.3755
+[2025-05-12T12:29:47.255Z] info: Task 1747052987255.4346 added to queue
+[2025-05-12T12:29:47.255Z] info: Assigning task 1747052987255.4346 to worker-2
+[2025-05-12T12:29:47.282Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:47 +0000] "DELETE /jobs/4 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:47.282Z] info: Worker worker-2 completed task 1747052987255.4346
+[2025-05-12T12:29:47.295Z] info: Task 1747052987295.6396 added to queue
+[2025-05-12T12:29:47.295Z] info: Assigning task 1747052987295.6396 to worker-2
+[2025-05-12T12:29:47.397Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:47 +0000] "GET /employer_jobs HTTP/1.1" 200 80 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:47.397Z] info: Worker worker-2 completed task 1747052987295.6396
+[2025-05-12T12:29:47.412Z] info: Task 1747052987412.1028 added to queue
+[2025-05-12T12:29:47.412Z] info: Assigning task 1747052987412.1028 to worker-2
+[2025-05-12T12:29:47.515Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:47 +0000] "GET /job_subscribers/5 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:47.515Z] info: Worker worker-2 completed task 1747052987412.1028
+[2025-05-12T12:29:47.921Z] info: Task 1747052987921.9644 added to queue
+[2025-05-12T12:29:47.921Z] info: Assigning task 1747052987921.9644 to worker-2
+[2025-05-12T12:29:47.948Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:47 +0000] "DELETE /jobs/5 HTTP/1.1" 200 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:47.949Z] info: Worker worker-2 completed task 1747052987921.9644
+[2025-05-12T12:29:47.956Z] info: Task 1747052987956.1309 added to queue
+[2025-05-12T12:29:47.956Z] info: Assigning task 1747052987956.1309 to worker-2
+[2025-05-12T12:29:48.058Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:29:48 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:29:48.058Z] info: Worker worker-2 completed task 1747052987956.1309
+[2025-05-12T12:30:25.725Z] warn: Access denied, no token provided
+[2025-05-12T12:30:25.726Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:25 +0000] "GET /user HTTP/1.1" 401 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:25.728Z] info: Task 1747053025728.1475 added to queue
+[2025-05-12T12:30:25.728Z] info: Assigning task 1747053025728.1475 to worker-2
+[2025-05-12T12:30:25.728Z] warn: Access denied, no token provided
+[2025-05-12T12:30:25.729Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:25 +0000] "GET /user HTTP/1.1" 401 25 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:25.729Z] info: Task 1747053025729.3123 added to queue
+[2025-05-12T12:30:25.829Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:25 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:25.829Z] info: Worker worker-2 completed task 1747053025728.1475
+[2025-05-12T12:30:25.829Z] info: Assigning task 1747053025729.3123 to worker-2
+[2025-05-12T12:30:25.931Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:25 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:25.931Z] info: Worker worker-2 completed task 1747053025729.3123
+[2025-05-12T12:30:28.634Z] info: Task 1747053028634.4453 added to queue
+[2025-05-12T12:30:28.634Z] info: Assigning task 1747053028634.4453 to worker-2
+[2025-05-12T12:30:28.634Z] info: Task 1747053028634.5142 added to queue
+[2025-05-12T12:30:28.736Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:28 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:28.736Z] info: Worker worker-2 completed task 1747053028634.4453
+[2025-05-12T12:30:28.736Z] info: Assigning task 1747053028634.5142 to worker-2
+[2025-05-12T12:30:28.837Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:28 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:28.837Z] info: Worker worker-2 completed task 1747053028634.5142
+[2025-05-12T12:30:36.946Z] info: Task 1747053036946.672 added to queue
+[2025-05-12T12:30:36.946Z] info: Assigning task 1747053036946.672 to worker-2
+[2025-05-12T12:30:37.047Z] info: Worker worker-2 completed task 1747053036946.672
+[2025-05-12T12:30:37.130Z] info: Task 1747053037130.9604 added to queue
+[2025-05-12T12:30:37.130Z] info: Assigning task 1747053037130.9604 to worker-2
+[2025-05-12T12:30:37.157Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:37 +0000] "POST /login HTTP/1.1" 200 165 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:37.157Z] info: Worker worker-2 completed task 1747053037130.9604
+[2025-05-12T12:30:39.725Z] info: Task 1747053039725.676 added to queue
+[2025-05-12T12:30:39.726Z] info: Assigning task 1747053039725.676 to worker-2
+[2025-05-12T12:30:39.727Z] info: Task 1747053039727.2896 added to queue
+[2025-05-12T12:30:39.828Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:39 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:39.828Z] info: Worker worker-2 completed task 1747053039725.676
+[2025-05-12T12:30:39.828Z] info: Assigning task 1747053039727.2896 to worker-2
+[2025-05-12T12:30:39.835Z] info: Task 1747053039835.233 added to queue
+[2025-05-12T12:30:39.929Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:39 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:39.930Z] info: Worker worker-2 completed task 1747053039727.2896
+[2025-05-12T12:30:39.930Z] info: Assigning task 1747053039835.233 to worker-2
+[2025-05-12T12:30:39.936Z] info: Task 1747053039936.9028 added to queue
+[2025-05-12T12:30:40.031Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:40 +0000] "GET /user/subscriptions HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:40.031Z] info: Worker worker-2 completed task 1747053039835.233
+[2025-05-12T12:30:40.031Z] info: Assigning task 1747053039936.9028 to worker-2
+[2025-05-12T12:30:40.133Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:40 +0000] "GET /user/subscriptions HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:40.133Z] info: Worker worker-2 completed task 1747053039936.9028
+[2025-05-12T12:30:40.769Z] info: Task 1747053040769.8574 added to queue
+[2025-05-12T12:30:40.769Z] info: Assigning task 1747053040769.8574 to worker-2
+[2025-05-12T12:30:40.795Z] info: Subscribed successfully
+[2025-05-12T12:30:40.796Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:40 +0000] "POST /subscribe HTTP/1.1" 200 37 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:40.796Z] info: Worker worker-2 completed task 1747053040769.8574
+[2025-05-12T12:30:43.000Z] info: Task 1747053043000.971 added to queue
+[2025-05-12T12:30:43.000Z] info: Assigning task 1747053043000.971 to worker-2
+[2025-05-12T12:30:43.002Z] info: Task 1747053043001.2305 added to queue
+[2025-05-12T12:30:43.002Z] info: Task 1747053043002.3347 added to queue
+[2025-05-12T12:30:43.003Z] info: Task 1747053043003.4736 added to queue
+[2025-05-12T12:30:43.102Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.102Z] info: Worker worker-2 completed task 1747053043000.971
+[2025-05-12T12:30:43.102Z] info: Assigning task 1747053043001.2305 to worker-2
+[2025-05-12T12:30:43.109Z] info: Task 1747053043109.9248 added to queue
+[2025-05-12T12:30:43.121Z] info: Task 1747053043121.3235 added to queue
+[2025-05-12T12:30:43.204Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.204Z] info: Worker worker-2 completed task 1747053043001.2305
+[2025-05-12T12:30:43.204Z] info: Assigning task 1747053043002.3347 to worker-2
+[2025-05-12T12:30:43.306Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.307Z] info: Worker worker-2 completed task 1747053043002.3347
+[2025-05-12T12:30:43.307Z] info: Assigning task 1747053043003.4736 to worker-2
+[2025-05-12T12:30:43.315Z] info: Task 1747053043315.1145 added to queue
+[2025-05-12T12:30:43.408Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /jobs HTTP/1.1" 200 93 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.408Z] info: Worker worker-2 completed task 1747053043003.4736
+[2025-05-12T12:30:43.408Z] info: Assigning task 1747053043109.9248 to worker-2
+[2025-05-12T12:30:43.510Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.510Z] info: Worker worker-2 completed task 1747053043109.9248
+[2025-05-12T12:30:43.510Z] info: Assigning task 1747053043121.3235 to worker-2
+[2025-05-12T12:30:43.612Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.612Z] info: Worker worker-2 completed task 1747053043121.3235
+[2025-05-12T12:30:43.612Z] info: Assigning task 1747053043315.1145 to worker-2
+[2025-05-12T12:30:43.620Z] info: Task 1747053043620.1982 added to queue
+[2025-05-12T12:30:43.714Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /employer_jobs HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.714Z] info: Worker worker-2 completed task 1747053043315.1145
+[2025-05-12T12:30:43.714Z] info: Assigning task 1747053043620.1982 to worker-2
+[2025-05-12T12:30:43.816Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:43 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:43.816Z] info: Worker worker-2 completed task 1747053043620.1982
+[2025-05-12T12:30:50.273Z] info: Task 1747053050273.8008 added to queue
+[2025-05-12T12:30:50.273Z] info: Assigning task 1747053050273.8008 to worker-2
+[2025-05-12T12:30:50.300Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:50 +0000] "POST /jobs HTTP/1.1" 200 36 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:50.300Z] info: Worker worker-2 completed task 1747053050273.8008
+[2025-05-12T12:30:51.864Z] info: Task 1747053051864.0286 added to queue
+[2025-05-12T12:30:51.864Z] info: Assigning task 1747053051864.0286 to worker-2
+[2025-05-12T12:30:51.966Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:51 +0000] "GET /employer_jobs HTTP/1.1" 200 91 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:51.966Z] info: Worker worker-2 completed task 1747053051864.0286
+[2025-05-12T12:30:51.973Z] info: Task 1747053051973.8582 added to queue
+[2025-05-12T12:30:51.973Z] info: Assigning task 1747053051973.8582 to worker-2
+[2025-05-12T12:30:52.075Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:52 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:52.075Z] info: Worker worker-2 completed task 1747053051973.8582
+[2025-05-12T12:30:53.414Z] info: Task 1747053053414.8362 added to queue
+[2025-05-12T12:30:53.415Z] info: Assigning task 1747053053414.8362 to worker-2
+[2025-05-12T12:30:53.416Z] info: Task 1747053053416.3062 added to queue
+[2025-05-12T12:30:53.516Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:53 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:53.516Z] info: Worker worker-2 completed task 1747053053414.8362
+[2025-05-12T12:30:53.517Z] info: Assigning task 1747053053416.3062 to worker-2
+[2025-05-12T12:30:53.524Z] info: Task 1747053053523.6626 added to queue
+[2025-05-12T12:30:53.619Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:53 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:53.619Z] info: Worker worker-2 completed task 1747053053416.3062
+[2025-05-12T12:30:53.619Z] info: Assigning task 1747053053523.6626 to worker-2
+[2025-05-12T12:30:53.625Z] info: Task 1747053053625.2183 added to queue
+[2025-05-12T12:30:53.721Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:53 +0000] "GET /user/subscriptions HTTP/1.1" 200 119 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:53.722Z] info: Worker worker-2 completed task 1747053053523.6626
+[2025-05-12T12:30:53.722Z] info: Assigning task 1747053053625.2183 to worker-2
+[2025-05-12T12:30:53.823Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:53 +0000] "GET /user/subscriptions HTTP/1.1" 200 119 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:53.823Z] info: Worker worker-2 completed task 1747053053625.2183
+[2025-05-12T12:30:54.846Z] info: Task 1747053054846.7048 added to queue
+[2025-05-12T12:30:54.846Z] info: Assigning task 1747053054846.7048 to worker-2
+[2025-05-12T12:30:54.873Z] info: Unsubscribed successfully
+[2025-05-12T12:30:54.873Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:54 +0000] "POST /unsubscribe HTTP/1.1" 200 39 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:54.873Z] info: Worker worker-2 completed task 1747053054846.7048
+[2025-05-12T12:30:57.466Z] info: Task 1747053057466.363 added to queue
+[2025-05-12T12:30:57.466Z] info: Assigning task 1747053057466.363 to worker-2
+[2025-05-12T12:30:57.471Z] info: Task 1747053057471.3396 added to queue
+[2025-05-12T12:30:57.472Z] info: Task 1747053057472.5098 added to queue
+[2025-05-12T12:30:57.472Z] info: Task 1747053057472.5972 added to queue
+[2025-05-12T12:30:57.568Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:57 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:57.568Z] info: Worker worker-2 completed task 1747053057466.363
+[2025-05-12T12:30:57.568Z] info: Assigning task 1747053057471.3396 to worker-2
+[2025-05-12T12:30:57.574Z] info: Task 1747053057574.304 added to queue
+[2025-05-12T12:30:57.581Z] info: Task 1747053057581.1216 added to queue
+[2025-05-12T12:30:57.668Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:57 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:57.668Z] info: Worker worker-2 completed task 1747053057471.3396
+[2025-05-12T12:30:57.668Z] info: Assigning task 1747053057472.5098 to worker-2
+[2025-05-12T12:30:57.769Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:57 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:57.770Z] info: Worker worker-2 completed task 1747053057472.5098
+[2025-05-12T12:30:57.770Z] info: Assigning task 1747053057472.5972 to worker-2
+[2025-05-12T12:30:57.775Z] info: Task 1747053057775.5527 added to queue
+[2025-05-12T12:30:57.871Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:57 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:57.871Z] info: Worker worker-2 completed task 1747053057472.5972
+[2025-05-12T12:30:57.871Z] info: Assigning task 1747053057574.304 to worker-2
+[2025-05-12T12:30:57.972Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:57 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:57.972Z] info: Worker worker-2 completed task 1747053057574.304
+[2025-05-12T12:30:57.972Z] info: Assigning task 1747053057581.1216 to worker-2
+[2025-05-12T12:30:57.977Z] info: Task 1747053057977.1606 added to queue
+[2025-05-12T12:30:58.074Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.074Z] info: Worker worker-2 completed task 1747053057581.1216
+[2025-05-12T12:30:58.074Z] info: Assigning task 1747053057775.5527 to worker-2
+[2025-05-12T12:30:58.079Z] info: Task 1747053058079.3997 added to queue
+[2025-05-12T12:30:58.175Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /employer_jobs HTTP/1.1" 200 91 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.175Z] info: Worker worker-2 completed task 1747053057775.5527
+[2025-05-12T12:30:58.175Z] info: Assigning task 1747053057977.1606 to worker-2
+[2025-05-12T12:30:58.180Z] info: Task 1747053058180.6558 added to queue
+[2025-05-12T12:30:58.277Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.277Z] info: Worker worker-2 completed task 1747053057977.1606
+[2025-05-12T12:30:58.277Z] info: Assigning task 1747053058079.3997 to worker-2
+[2025-05-12T12:30:58.378Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.378Z] info: Worker worker-2 completed task 1747053058079.3997
+[2025-05-12T12:30:58.378Z] info: Assigning task 1747053058180.6558 to worker-2
+[2025-05-12T12:30:58.384Z] info: Task 1747053058384.1982 added to queue
+[2025-05-12T12:30:58.479Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.479Z] info: Worker worker-2 completed task 1747053058180.6558
+[2025-05-12T12:30:58.479Z] info: Assigning task 1747053058384.1982 to worker-2
+[2025-05-12T12:30:58.581Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:30:58 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:30:58.581Z] info: Worker worker-2 completed task 1747053058384.1982
+[2025-05-12T12:31:02.410Z] info: Task 1747053062410.781 added to queue
+[2025-05-12T12:31:02.410Z] info: Assigning task 1747053062410.781 to worker-2
+[2025-05-12T12:31:02.418Z] info: Task 1747053062418.2173 added to queue
+[2025-05-12T12:31:02.418Z] info: Task 1747053062418.634 added to queue
+[2025-05-12T12:31:02.419Z] info: Task 1747053062419.2295 added to queue
+[2025-05-12T12:31:02.512Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:02 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:02.512Z] info: Worker worker-2 completed task 1747053062410.781
+[2025-05-12T12:31:02.512Z] info: Assigning task 1747053062418.2173 to worker-2
+[2025-05-12T12:31:02.521Z] info: Task 1747053062521.7822 added to queue
+[2025-05-12T12:31:02.530Z] info: Task 1747053062530.3145 added to queue
+[2025-05-12T12:31:02.614Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:02 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:02.614Z] info: Worker worker-2 completed task 1747053062418.2173
+[2025-05-12T12:31:02.614Z] info: Assigning task 1747053062418.634 to worker-2
+[2025-05-12T12:31:02.715Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:02 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:02.715Z] info: Worker worker-2 completed task 1747053062418.634
+[2025-05-12T12:31:02.716Z] info: Assigning task 1747053062419.2295 to worker-2
+[2025-05-12T12:31:02.722Z] info: Task 1747053062722.213 added to queue
+[2025-05-12T12:31:02.817Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:02 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:02.818Z] info: Worker worker-2 completed task 1747053062419.2295
+[2025-05-12T12:31:02.818Z] info: Assigning task 1747053062521.7822 to worker-2
+[2025-05-12T12:31:02.919Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:02 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:02.919Z] info: Worker worker-2 completed task 1747053062521.7822
+[2025-05-12T12:31:02.919Z] info: Assigning task 1747053062530.3145 to worker-2
+[2025-05-12T12:31:02.925Z] info: Task 1747053062925.264 added to queue
+[2025-05-12T12:31:03.020Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.020Z] info: Worker worker-2 completed task 1747053062530.3145
+[2025-05-12T12:31:03.020Z] info: Assigning task 1747053062722.213 to worker-2
+[2025-05-12T12:31:03.027Z] info: Task 1747053063027.771 added to queue
+[2025-05-12T12:31:03.122Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /employer_jobs HTTP/1.1" 200 91 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.122Z] info: Worker worker-2 completed task 1747053062722.213
+[2025-05-12T12:31:03.122Z] info: Assigning task 1747053062925.264 to worker-2
+[2025-05-12T12:31:03.129Z] info: Task 1747053063129.0396 added to queue
+[2025-05-12T12:31:03.224Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.224Z] info: Worker worker-2 completed task 1747053062925.264
+[2025-05-12T12:31:03.224Z] info: Assigning task 1747053063027.771 to worker-2
+[2025-05-12T12:31:03.326Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.327Z] info: Worker worker-2 completed task 1747053063027.771
+[2025-05-12T12:31:03.327Z] info: Assigning task 1747053063129.0396 to worker-2
+[2025-05-12T12:31:03.333Z] info: Task 1747053063333.9426 added to queue
+[2025-05-12T12:31:03.428Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.428Z] info: Worker worker-2 completed task 1747053063129.0396
+[2025-05-12T12:31:03.428Z] info: Assigning task 1747053063333.9426 to worker-2
+[2025-05-12T12:31:03.530Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:03 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:03.530Z] info: Worker worker-2 completed task 1747053063333.9426
+[2025-05-12T12:31:07.218Z] info: Task 1747053067218.0615 added to queue
+[2025-05-12T12:31:07.218Z] info: Assigning task 1747053067218.0615 to worker-2
+[2025-05-12T12:31:07.245Z] info: Subscribed successfully
+[2025-05-12T12:31:07.245Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:07 +0000] "POST /subscribe HTTP/1.1" 200 37 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:07.245Z] info: Worker worker-2 completed task 1747053067218.0615
+[2025-05-12T12:31:08.639Z] info: Task 1747053068639.679 added to queue
+[2025-05-12T12:31:08.639Z] info: Assigning task 1747053068639.679 to worker-2
+[2025-05-12T12:31:08.640Z] info: Task 1747053068640.7498 added to queue
+[2025-05-12T12:31:08.741Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:08 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:08.742Z] info: Worker worker-2 completed task 1747053068639.679
+[2025-05-12T12:31:08.742Z] info: Assigning task 1747053068640.7498 to worker-2
+[2025-05-12T12:31:08.748Z] info: Task 1747053068748.4841 added to queue
+[2025-05-12T12:31:08.844Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:08 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:08.844Z] info: Worker worker-2 completed task 1747053068640.7498
+[2025-05-12T12:31:08.844Z] info: Assigning task 1747053068748.4841 to worker-2
+[2025-05-12T12:31:08.850Z] info: Task 1747053068850.3967 added to queue
+[2025-05-12T12:31:08.945Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:08 +0000] "GET /user/subscriptions HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:08.945Z] info: Worker worker-2 completed task 1747053068748.4841
+[2025-05-12T12:31:08.945Z] info: Assigning task 1747053068850.3967 to worker-2
+[2025-05-12T12:31:09.045Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:09 +0000] "GET /user/subscriptions HTTP/1.1" 200 119 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:09.046Z] info: Worker worker-2 completed task 1747053068850.3967
+[2025-05-12T12:31:09.931Z] info: Task 1747053069931.303 added to queue
+[2025-05-12T12:31:09.931Z] info: Assigning task 1747053069931.303 to worker-2
+[2025-05-12T12:31:09.933Z] info: Task 1747053069933.1506 added to queue
+[2025-05-12T12:31:09.934Z] info: Task 1747053069934.4834 added to queue
+[2025-05-12T12:31:09.934Z] info: Task 1747053069934.3916 added to queue
+[2025-05-12T12:31:10.033Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.033Z] info: Worker worker-2 completed task 1747053069931.303
+[2025-05-12T12:31:10.033Z] info: Assigning task 1747053069933.1506 to worker-2
+[2025-05-12T12:31:10.042Z] info: Task 1747053070042.4338 added to queue
+[2025-05-12T12:31:10.050Z] info: Task 1747053070050.383 added to queue
+[2025-05-12T12:31:10.135Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.136Z] info: Worker worker-2 completed task 1747053069933.1506
+[2025-05-12T12:31:10.136Z] info: Assigning task 1747053069934.4834 to worker-2
+[2025-05-12T12:31:10.237Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.237Z] info: Worker worker-2 completed task 1747053069934.4834
+[2025-05-12T12:31:10.237Z] info: Assigning task 1747053069934.3916 to worker-2
+[2025-05-12T12:31:10.245Z] info: Task 1747053070245.6182 added to queue
+[2025-05-12T12:31:10.339Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.339Z] info: Worker worker-2 completed task 1747053069934.3916
+[2025-05-12T12:31:10.339Z] info: Assigning task 1747053070042.4338 to worker-2
+[2025-05-12T12:31:10.441Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.441Z] info: Worker worker-2 completed task 1747053070042.4338
+[2025-05-12T12:31:10.442Z] info: Assigning task 1747053070050.383 to worker-2
+[2025-05-12T12:31:10.449Z] info: Task 1747053070449.313 added to queue
+[2025-05-12T12:31:10.543Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.544Z] info: Worker worker-2 completed task 1747053070050.383
+[2025-05-12T12:31:10.544Z] info: Assigning task 1747053070245.6182 to worker-2
+[2025-05-12T12:31:10.550Z] info: Task 1747053070550.5488 added to queue
+[2025-05-12T12:31:10.645Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /employer_jobs HTTP/1.1" 200 91 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.645Z] info: Worker worker-2 completed task 1747053070245.6182
+[2025-05-12T12:31:10.646Z] info: Assigning task 1747053070449.313 to worker-2
+[2025-05-12T12:31:10.650Z] info: Task 1747053070650.9263 added to queue
+[2025-05-12T12:31:10.747Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.747Z] info: Worker worker-2 completed task 1747053070449.313
+[2025-05-12T12:31:10.747Z] info: Assigning task 1747053070550.5488 to worker-2
+[2025-05-12T12:31:10.849Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.849Z] info: Worker worker-2 completed task 1747053070550.5488
+[2025-05-12T12:31:10.849Z] info: Assigning task 1747053070650.9263 to worker-2
+[2025-05-12T12:31:10.854Z] info: Task 1747053070854.4744 added to queue
+[2025-05-12T12:31:10.950Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:10 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:10.950Z] info: Worker worker-2 completed task 1747053070650.9263
+[2025-05-12T12:31:10.950Z] info: Assigning task 1747053070854.4744 to worker-2
+[2025-05-12T12:31:11.051Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:11 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:11.051Z] info: Worker worker-2 completed task 1747053070854.4744
+[2025-05-12T12:31:29.889Z] info: Task 1747053089889.529 added to queue
+[2025-05-12T12:31:29.890Z] info: Assigning task 1747053089889.529 to worker-2
+[2025-05-12T12:31:29.917Z] info: Unsubscribed successfully
+[2025-05-12T12:31:29.917Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:29 +0000] "POST /unsubscribe HTTP/1.1" 200 39 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:29.917Z] info: Worker worker-2 completed task 1747053089889.529
+[2025-05-12T12:31:30.384Z] info: Task 1747053090384.1233 added to queue
+[2025-05-12T12:31:30.384Z] info: Assigning task 1747053090384.1233 to worker-2
+[2025-05-12T12:31:30.403Z] info: Unsubscribed successfully
+[2025-05-12T12:31:30.403Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:30 +0000] "POST /unsubscribe HTTP/1.1" 200 39 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:30.403Z] info: Worker worker-2 completed task 1747053090384.1233
+[2025-05-12T12:31:31.629Z] info: Task 1747053091629.8347 added to queue
+[2025-05-12T12:31:31.629Z] info: Assigning task 1747053091629.8347 to worker-2
+[2025-05-12T12:31:31.631Z] info: Task 1747053091631.981 added to queue
+[2025-05-12T12:31:31.635Z] info: Task 1747053091635.6348 added to queue
+[2025-05-12T12:31:31.636Z] info: Task 1747053091636.857 added to queue
+[2025-05-12T12:31:31.730Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:31 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:31.730Z] info: Worker worker-2 completed task 1747053091629.8347
+[2025-05-12T12:31:31.730Z] info: Assigning task 1747053091631.981 to worker-2
+[2025-05-12T12:31:31.735Z] info: Task 1747053091735.7947 added to queue
+[2025-05-12T12:31:31.742Z] info: Task 1747053091742.884 added to queue
+[2025-05-12T12:31:31.832Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:31 +0000] "GET /jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:31.832Z] info: Worker worker-2 completed task 1747053091631.981
+[2025-05-12T12:31:31.832Z] info: Assigning task 1747053091635.6348 to worker-2
+[2025-05-12T12:31:31.932Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:31 +0000] "GET /user HTTP/1.1" 200 118 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:31.932Z] info: Worker worker-2 completed task 1747053091635.6348
+[2025-05-12T12:31:31.932Z] info: Assigning task 1747053091636.857 to worker-2
+[2025-05-12T12:31:31.936Z] info: Task 1747053091936.3828 added to queue
+[2025-05-12T12:31:32.034Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /jobs HTTP/1.1" 200 183 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.034Z] info: Worker worker-2 completed task 1747053091636.857
+[2025-05-12T12:31:32.034Z] info: Assigning task 1747053091735.7947 to worker-2
+[2025-05-12T12:31:32.135Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.135Z] info: Worker worker-2 completed task 1747053091735.7947
+[2025-05-12T12:31:32.135Z] info: Assigning task 1747053091742.884 to worker-2
+[2025-05-12T12:31:32.139Z] info: Task 1747053092139.5342 added to queue
+[2025-05-12T12:31:32.236Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /user HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.236Z] info: Worker worker-2 completed task 1747053091742.884
+[2025-05-12T12:31:32.236Z] info: Assigning task 1747053091936.3828 to worker-2
+[2025-05-12T12:31:32.241Z] info: Task 1747053092241.4736 added to queue
+[2025-05-12T12:31:32.338Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /employer_jobs HTTP/1.1" 200 91 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.338Z] info: Worker worker-2 completed task 1747053091936.3828
+[2025-05-12T12:31:32.338Z] info: Assigning task 1747053092139.5342 to worker-2
+[2025-05-12T12:31:32.342Z] info: Task 1747053092342.0435 added to queue
+[2025-05-12T12:31:32.439Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.439Z] info: Worker worker-2 completed task 1747053092139.5342
+[2025-05-12T12:31:32.439Z] info: Assigning task 1747053092241.4736 to worker-2
+[2025-05-12T12:31:32.540Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /employer_jobs HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.540Z] info: Worker worker-2 completed task 1747053092241.4736
+[2025-05-12T12:31:32.540Z] info: Assigning task 1747053092342.0435 to worker-2
+[2025-05-12T12:31:32.545Z] info: Task 1747053092545.9102 added to queue
+[2025-05-12T12:31:32.642Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /job_subscribers/4 HTTP/1.1" 200 2 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.642Z] info: Worker worker-2 completed task 1747053092342.0435
+[2025-05-12T12:31:32.642Z] info: Assigning task 1747053092545.9102 to worker-2
+[2025-05-12T12:31:32.743Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:31:32 +0000] "GET /job_subscribers/4 HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:31:32.743Z] info: Worker worker-2 completed task 1747053092545.9102
+[2025-05-12T12:32:32.209Z] info: Task 1747053152209.4177 added to queue
+[2025-05-12T12:32:32.209Z] info: Assigning task 1747053152209.4177 to worker-2
+[2025-05-12T12:32:32.309Z] info: Worker worker-2 completed task 1747053152209.4177
+[2025-05-12T12:32:32.391Z] info: Task 1747053152391.6575 added to queue
+[2025-05-12T12:32:32.392Z] info: Assigning task 1747053152391.6575 to worker-2
+[2025-05-12T12:32:32.418Z] info: ::ffff:127.0.0.1 - - [12/May/2025:12:32:32 +0000] "POST /login HTTP/1.1" 200 170 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0"
+[2025-05-12T12:32:32.418Z] info: Worker worker-2 completed task 1747053152391.6575

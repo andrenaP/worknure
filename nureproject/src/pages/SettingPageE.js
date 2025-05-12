@@ -1,17 +1,16 @@
-import React, { useState,useEffect } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import './SettingPageE.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./SettingPageE.css";
 
 const API_URL = "http://localhost:3000";
-
 
 function SettingPageE() {
   const [settings, setSettings] = useState({
     first_name: "",
     last_name: "",
     email: "",
-    jobInfo: ""
+    jobInfo: "",
   });
   const [jobs, setJobs] = useState([]); // Список добавленных работ
   const navigate = useNavigate();
@@ -25,7 +24,7 @@ function SettingPageE() {
       setJobs([...jobs, settings.jobInfo]); // Добавляем работу в список
       setSettings({ ...settings, jobInfo: "" }); // Очищаем поле ввода
     } else {
-      alert("Введите информацию о работе перед добавлением");
+      alert("Введіть інформацію про роботу перед додаванням");
     }
   };
 
@@ -35,23 +34,25 @@ function SettingPageE() {
 
   const fetchuser = async () => {
     try {
-      const response = await axios.get(`${API_URL}/user`, { headers: { Authorization: localStorage.token } });
+      const response = await axios.get(`${API_URL}/user`, {
+        headers: { Authorization: localStorage.token },
+      });
       setSettings(response.data);
-      console.log(response.data)
+      console.log(response.data);
     } catch (error) {
       console.error("Error fetching user", error);
     }
   };
 
-
-
-  const handleSave = async () =>  {
+  const handleSave = async () => {
     // Здесь можно добавить запрос к API для сохранения настроек
     const dataToSave = { ...settings, jobs };
-    alert("Настройки сохранены: " + JSON.stringify(dataToSave));
+    alert("Налаштування збережено: " + JSON.stringify(dataToSave));
     // Например: await axios.put(`${API_URL}/employer/settings`, dataToSave, { headers: { Authorization: token } });
-    console.log(dataToSave)
-    const response = await axios.post(`${API_URL}/user`, dataToSave, { headers: { Authorization: localStorage.token } });
+    console.log(dataToSave);
+    const response = await axios.post(`${API_URL}/user`, dataToSave, {
+      headers: { Authorization: localStorage.token },
+    });
   };
 
   const handleCancel = () => {
@@ -61,47 +62,57 @@ function SettingPageE() {
   return (
     <div className="settings-employer-container">
       <h2>Настройки работодателя</h2>
-      
-      <input 
-        type="text" 
+
+      <input
+        type="text"
         name="first_name"
-        placeholder="Имя" 
+        placeholder="Ім'я"
         value={settings.first_name}
         onChange={handleChange}
       />
-      <input 
-        type="text" 
+      <input
+        type="text"
         name="last_name"
-        placeholder="Фамилия" 
+        placeholder="Прізвище"
         value={settings.last_name}
         onChange={handleChange}
       />
-      <input 
-        type="email" 
+      <input
+        type="email"
         name="email"
-        placeholder="Почта" 
+        placeholder="Пошта"
         value={settings.email}
         onChange={handleChange}
       />
-      
+
       <div className="job-select-container">
-        <select name="jobs" value="" onChange={(e) => setSettings({ ...settings, jobInfo: e.target.value })}>
-          <option value="" disabled>Выберите работу</option>
+        <select
+          name="jobs"
+          value=""
+          onChange={(e) =>
+            setSettings({ ...settings, jobInfo: e.target.value })
+          }
+        >
+          <option value="" disabled>
+            Выберите работу
+          </option>
           {jobs.map((job, index) => (
-            <option key={index} value={job}>{job}</option>
+            <option key={index} value={job}>
+              {job}
+            </option>
           ))}
         </select>
         <button onClick={handleAddJob}>Добавить работу</button>
       </div>
-      
+
       <textarea
         name="jobInfo"
-        placeholder="Информация о работе"
+        placeholder="Інформація про роботу"
         value={settings.jobInfo}
         onChange={handleChange}
         className="job-info-input"
       />
-      
+
       <div className="action-buttons">
         <button onClick={handleSave}>Сохранить</button>
         <button onClick={handleCancel}>Отмена</button>

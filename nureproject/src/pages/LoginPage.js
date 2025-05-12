@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import './LoginPage.css';
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./LoginPage.css";
 
 const API_URL = "http://localhost:3000";
 
 function LoginPage() {
-  const [loginData, setLoginData] = useState({ username: "", password: "", role: "worker" });
+  const [loginData, setLoginData] = useState({
+    username: "",
+    password: "",
+    role: "worker",
+  });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -18,23 +22,28 @@ function LoginPage() {
 
     // Проверка на пустые поля
     if (!username || !password) {
-      alert("Пожалуйста, заполните все поля");
+      alert("Будь ласка, заповніть усі поля");
       return;
     }
 
     try {
-      console.log("Отправляемые данные:", { username, password }); // Для отладки
-      const response = await axios.post(`${API_URL}/login`, { username, password });
+      console.log("Відправляються дані:", { username, password }); // Для отладки
+      const response = await axios.post(`${API_URL}/login`, {
+        username,
+        password,
+      });
 
       const user = { token: response.data.token, role: response.data.role };
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("role", response.data.role);
-      
-      alert("Вход выполнен успешно");
+
+      alert("Вхід виконано успішно");
       navigate("/", { state: { user } });
     } catch (error) {
-      console.error("Ошибка сервера:", error.response); // Для отладки
-      alert("Ошибка входа: " + (error.response?.data?.message || "Login failed"));
+      console.error("Помилка сервера:", error.response); // Для отладки
+      alert(
+        "Помилка входу: " + (error.response?.data?.message || "Login failed"),
+      );
     }
   };
 
@@ -44,18 +53,18 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-      <h2>Вход</h2>
-      <input 
-        type="text" 
+      <h2>Вхід</h2>
+      <input
+        type="text"
         name="username"
-        placeholder="Логин" 
+        placeholder="Логин"
         value={loginData.username}
         onChange={handleChange}
       />
-      <input 
-        type="password" 
+      <input
+        type="password"
         name="password"
-        placeholder="Пароль" 
+        placeholder="Пароль"
         value={loginData.password}
         onChange={handleChange}
       />
