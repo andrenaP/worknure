@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import SettingPage from "./pages/SettingPage";
 import {
-  getJobs,
-  getSubscribedJobIds,
-  subscribeJob,
-  unsubscribeJob,
+  fetchJobs,
+  fetchSubscribedJobs,
+  handleSubscribeJob,
+  handleUnsubscribeJob,
 } from "./controllers/jobController";
 import "./App.css";
 
@@ -26,11 +20,38 @@ const App = () => {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    getJobs(setJobs);
-    if (userRole === "worker" && token) {
-      getSubscribedJobIds(setSubscribedJobIds, token);
-    }
+    const init = async () => {
+      try {
+        const jobsData = await fetchJobs();
+        setJobs(jobsData);
+        if (userRole === "worker" && token) {
+          const subscribedIds = await fetchSubscribedJobs(token);
+          setSubscribedJobIds(subscribedIds);
+        }
+      } catch (error) {
+        console.error("Ошибка при инициализации данных", error);
+      }
+    };
+    init();
   }, []);
+
+  const subscribeJob = async (jobId) => {
+    try {
+      await handleSubscribeJob(jobId, token);
+      setSubscribedJobIds([...subscribedJobIds, jobId]);
+    } catch (error) {
+      alert("Не удалось подписаться");
+    }
+  };
+
+  const unsubscribeJob = async (jobId) => {
+    try {
+      await handleUnsubscribeJob(jobId, token);
+      setSubscribedJobIds(subscribedJobIds.filter((id) => id !== jobId));
+    } catch (error) {
+      alert("Не удалось отписаться");
+    }
+  };
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -49,7 +70,7 @@ const App = () => {
     };
 
     const filteredJobs = jobs.filter((job) =>
-      job.name.toLowerCase().includes(searchQuery.toLowerCase())
+      job.name.toLowerCase().includes(searchQuery.toLowerCase()),
     );
 
     return (
@@ -83,15 +104,11 @@ const App = () => {
                 {userRole === "worker" && (
                   <div>
                     {subscribedJobIds.includes(job.id) ? (
-                      <button
-                        onClick={() => unsubscribeJob(job.id, token, subscribedJobIds, setSubscribedJobIds)}
-                      >
+                      <button onClick={() => unsubscribeJob(job.id)}>
                         Отписаться
                       </button>
                     ) : (
-                      <button
-                        onClick={() => subscribeJob(job.id, token, subscribedJobIds, setSubscribedJobIds)}
-                      >
+                      <button onClick={() => subscribeJob(job.id)}>
                         Подписаться
                       </button>
                     )}

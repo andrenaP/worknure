@@ -26,7 +26,16 @@ function SettingPage() {
 
   useEffect(() => {
     fetchUser();
-  }, []);
+
+    // Short polling for subscribersMap when user is an employer
+    let pollingInterval;
+    if (user?.role === "employer") {
+      pollingInterval = setInterval(fetchAllSubscribers, 10000); // Poll every 10 seconds
+    }
+
+    // Cleanup interval on component unmount or role change
+    return () => clearInterval(pollingInterval);
+  }, [user?.role]); // Re-run when user role changes
 
   const fetchUser = async () => {
     try {
@@ -55,20 +64,27 @@ function SettingPage() {
         headers: { Authorization: localStorage.token },
       });
       setJobs(res.data);
-
-      // Загружаем подписчиков для каждой вакансии
-      res.data.forEach(async (job) => {
-        try {
-          const subsRes = await axios.get(`${API_URL}/job_subscribers/${job.id}`, {
-            headers: { Authorization: localStorage.token },
-          });
-          setSubscribersMap(prev => ({ ...prev, [job.id]: subsRes.data }));
-        } catch (err) {
-          console.error(`Ошибка при получении подписчиков для job ${job.id}`, err);
-        }
-      });
+      fetchAllSubscribers(res.data); // Initial fetch for subscribers
     } catch (err) {
       console.error("Error fetching jobs", err);
+    }
+  };
+
+  const fetchAllSubscribers = async (jobsToFetch = jobs) => {
+    try {
+      const newSubscribersMap = {};
+      for (const job of jobsToFetch) {
+        const subsRes = await axios.get(
+          `${API_URL}/job_subscribers/${job.id}`,
+          {
+            headers: { Authorization: localStorage.token },
+          },
+        );
+        newSubscribersMap[job.id] = subsRes.data;
+      }
+      setSubscribersMap(newSubscribersMap);
+    } catch (err) {
+      console.error("Error fetching subscribers", err);
     }
   };
 
@@ -190,11 +206,7 @@ function SettingPage() {
             value={newJob.description}
             onChange={handleJobChange}
           />
-          <select
-            name="tag"
-            value={newJob.tag}
-            onChange={handleJobChange}
-          >
+          <select name="tag" value={newJob.tag} onChange={handleJobChange}>
             <option value="medic">Медик</option>
             <option value="teacher">Учитель</option>
             <option value="builder">Строитель</option>
@@ -212,7 +224,6 @@ function SettingPage() {
                 {job.description}
                 <br />
                 <button onClick={() => handleDeleteJob(job.id)}>Удалить</button>
-
                 {subscribersMap[job.id] && (
                   <>
                     <h4>Подписчики:</h4>

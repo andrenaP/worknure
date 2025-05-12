@@ -194,11 +194,16 @@ app.post("/user", authenticateToken, async (req, res) => {
 });
 
 app.get("/jobs", async (req, res) => {
+  console.log("jobs get");
   try {
+    console.log("try");
     const jobs = await sendToWorker("SELECT * FROM jobs", []);
+    console.log("jobs");
     res.json(jobs);
+    console.log(jobs);
   } catch (err) {
     res.status(500).json({ error: "Internal server error" });
+    console.log(err);
   }
 });
 

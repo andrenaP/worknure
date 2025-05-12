@@ -30,7 +30,7 @@ parentPort.on("message", async (msg) => {
 
   // Determine the type of query
   if (query.trim().toUpperCase().startsWith("SELECT")) {
-    await sleep(10000);
+    await sleep(100);
     db.all(query, params, (err, rows) => {
       if (err) {
         console.log(
